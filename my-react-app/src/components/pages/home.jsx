@@ -1,11 +1,11 @@
-import Products from '../pages/products.jsx'
+import Hero from '../sections/home/hero.jsx';
+import ProductCategory from '../sections/home/productCategorys.jsx';
 
 function Home() {
     return (
         <div className="w-full">
-            <h1>home</h1>
-            <Products />
-            <p>ss</p>
+            <Hero />
+            <ProductCategory />
         </div>
     );
 }
