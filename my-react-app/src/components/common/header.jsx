@@ -8,7 +8,7 @@ const Header = () => {
     const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
 
     return (
-        <header className="bg-white w-full  mx-auto sticky top-0 ">
+        <header className="bg-white w-full mx-auto fixed top-0 z-50 shadow-md">
             <div className="m-0 px-4 py-3 flex items-center justify-between max-w-[1240px] mx-auto">
                 {/* Logo a la izquierda */}
                 <div className="flex-shrink-0 flex items-center">
