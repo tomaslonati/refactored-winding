@@ -11,7 +11,17 @@
   }
   
   .animate-slide-left {
-    animation: slide-left 22s linear infinite;
+    animation: slide-left 25s linear infinite;
+  }
+  
+  /* Ocultar scrollbar */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 }
 

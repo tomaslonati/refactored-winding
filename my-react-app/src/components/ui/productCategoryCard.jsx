@@ -1,7 +1,7 @@
 
 const ProductCategoryCard = ({ name, image, link }) => {
     return (
-        <div className="cursor-pointer  rounded-xl flex flex-row justify-between p-3 lg:py-[36px] lg:px-[24px] bg-white shadow-[0px_2px_14px_rgba(2,110,192,0.10)] transition-all duration-300 ease-in-out hover:shadow-[0px_4px_20px_rgba(2,110,192,0.15)] hover:-translate-y-1">
+        <div className="cursor-pointer  rounded-xl flex flex-row justify-between p-3 lg:py-[36px] lg:px-[24px] bg-white shadow-[0px_4px_16px_rgba(2,110,192,0.18)] transition-all duration-300 ease-in-out hover:shadow-[0px_8px_24px_rgba(2,110,192,0.25)] hover:-translate-y-1">
             <div className="flex flex-col  w-0.70">
                 <div className="flex items-center justify-start w-full h-[60px]">
                     <img

@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/pages/home.jsx';
 import Products from './components/pages/products.jsx';
 import Header from './components/common/header.jsx';
+import Footer from './components/common/footer.jsx';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route path="/products" element={<Products />} />
         </Routes>
       </main>
+      <Footer />
     </Router>
   );
 }

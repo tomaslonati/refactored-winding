@@ -1,24 +1,88 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import logo from "../../assets/brand/shortcut.png"
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [servicesOpen, setServicesOpen] = useState(false);
-    const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
     const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation();    const handleServiciosClick = (e) => {
+        e.preventDefault();
+        // Cerrar menú móvil si está abierto
+        setMenuOpen(false);
+        
+        // Si estamos en la página de inicio, hacer scroll a la sección
+        if (location.pathname === '/') {
+            const serviciosSection = document.getElementById('servicios');
+            if (serviciosSection) {
+                serviciosSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            // Si estamos en otra página, navegar al home primero
+            navigate('/');
+            // Usar setTimeout para asegurar que la página se renderice antes del scroll
+            setTimeout(() => {
+                const serviciosSection = document.getElementById('servicios');
+                if (serviciosSection) {
+                    serviciosSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        }
+    };
+
+    const handleProyectosClick = (e) => {
+        e.preventDefault();
+        // Cerrar menú móvil si está abierto
+        setMenuOpen(false);
+        
+        // Si estamos en la página de inicio, hacer scroll a la sección
+        if (location.pathname === '/') {
+            const somosWindingSection = document.getElementById('somosWinding');
+            if (somosWindingSection) {
+                somosWindingSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            // Si estamos en otra página, navegar al home primero
+            navigate('/');
+            // Usar setTimeout para asegurar que la página se renderice antes del scroll
+            setTimeout(() => {
+                const somosWindingSection = document.getElementById('somosWinding');
+                if (somosWindingSection) {
+                    somosWindingSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        }
+    };    // Efecto para manejar el scroll cuando llegamos al home con hash
+    useEffect(() => {
+        if (location.pathname === '/' && location.hash === '#servicios') {
+            setTimeout(() => {
+                const serviciosSection = document.getElementById('servicios');
+                if (serviciosSection) {
+                    serviciosSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        }
+        if (location.pathname === '/' && location.hash === '#somosWinding') {
+            setTimeout(() => {
+                const somosWindingSection = document.getElementById('somosWinding');
+                if (somosWindingSection) {
+                    somosWindingSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        }
+    }, [location]);
 
     return (
         <header className="bg-white w-full mx-auto fixed top-0 z-50 shadow-md">
-            <div className="m-0 px-4 py-3 flex items-center justify-between max-w-[1240px] mx-auto">
-                {/* Logo a la izquierda */}
+            <div className="m-0 px-4 py-3 flex items-center justify-between max-w-[1240px] mx-auto">                {/* Logo a la izquierda */}
                 <div className="flex-shrink-0 flex items-center">
-                    <a href="/">
+                    <Link to="/">
                         <img
                             src={logo}
                             alt="Logo"
                             className="w-20"
                         />
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Menú centrado */}
@@ -36,50 +100,20 @@ const Header = () => {
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                 <path d="M19 9l-7 7-7-7" />
                             </svg>
-                        </button>
+                        </button>                          
                         <div className={`${productsDropdownOpen ? 'block' : 'hidden'} absolute left-0 mt-0 w-56 text-black text-left bg-white border rounded shadow-lg z-10`}
                         >
-                            <a href="#eolica" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Energía eólica</a>
-                            <a href="#movil" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Energía sustentable movil</a>
-                            <a href="#bombeo" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Bombeo solar</a>
-                            <a href="#casas-rodantes" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Casas rodantes</a>
-                            <a href="#soportes" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Soportes</a>
-                            <a href="#kit-casas" className="block px-4 py-2 text-sm  text-gray-600 hover:bg-blue-100">Kit casas</a>
-                            <a href="/productos" className="block px-4 py-2 text-sm  border-t-1   border-gray-300 text-gray-600 hover:bg-blue-100">Todos los productos</a>
-                        </div>
-                    </div>
-                    <div className="relative"
-                        onMouseEnter={() => setServicesDropdownOpen(true)}
-                        onMouseLeave={() => setServicesDropdownOpen(false)}
-                    >
-                        <button
-                            className="flex items-center gap-1 py-2  text-[#1A1A1A] hover:text-gray-500 focus:outline-none"
-                            aria-haspopup="true"
-                            aria-expanded={servicesDropdownOpen}
-                        >
-                            Servicios
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                                <path d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div className={`${servicesDropdownOpen ? 'block' : 'hidden'} absolute left-0 mt-0 w-40 text-black text-left bg-white border rounded shadow-lg z-10`}
-                        >
-                            <a href="#alquiler" className="block px-4 py-2 text-sm  border-t-1   border-gray-300 text-gray-600 hover:bg-blue-100">Alquiler</a>
-                            <a href="#ingenieria" className="block px-4 py-2 text-sm  border-t-1   border-gray-300 text-gray-600 hover:bg-blue-100">Ingeniería</a>
-                            <a href="#servicio-tecnico" className="block px-4 py-2 text-sm  border-t-1   border-gray-300 text-gray-600 hover:bg-blue-100">Servicio Técnico</a>
-                            <a href="/servicios" className="block px-4 py-2 text-sm  border-t-1   border-gray-300 text-gray-600 hover:bg-blue-100">Todos los servicios</a>
-
-                        </div>
-                    </div>
-
-                    <a href="#nosotros" className="text-gray-700 hover:text-gray-500 ">Nosotros</a>
-                    <a href="#proyectos" className="text-gray-700 hover:text-gray-500">Proyectos</a>
-                    <a href="#calculador" className="text-gray-700 hover:text-gray-500">Calculador de consumo</a>
-                </nav>
-
-                {/* Contacto a la derecha */}
+                            <Link to="/productos?categoria=electricidad-sin-red" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Electricidad donde no llega la red</Link>
+                            <Link to="/productos?categoria=ahorro-combustibles" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Ahorro en combustibles fósiles</Link>
+                            <Link to="/productos?categoria=soluciones-cortes" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Soluciones para cortes de luz</Link>
+                            <Link to="/productos?categoria=ahorro-facturas" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Ahorro en facturas de luz</Link>
+                            <Link to="/productos" className="block px-4 py-2 text-sm  border-t-1   border-gray-300 text-gray-600 hover:bg-blue-100">Todos los productos</Link>
+                        </div>                    </div>                    <button onClick={handleServiciosClick} className="text-gray-700 hover:text-gray-500 cursor-pointer">Servicios</button>
+                    <button onClick={handleProyectosClick} className="text-gray-700 hover:text-gray-500 cursor-pointer">Proyectos</button>
+                    <Link to="/calculador" className="text-gray-700 hover:text-gray-500">Calculador de consumo</Link>
+                </nav>                {/* Contacto a la derecha */}
                 <div className="hidden md:flex flex-shrink-0 items-center">
-                    <a href="#contacto" className="text-[#0071c6] font-bold px-4 py-4  transition-colors">Contacto</a>
+                    <Link to="/contacto" className="text-[#0071c6] font-bold px-4 py-4  transition-colors">Contacto</Link>
                 </div>
 
                 <button
@@ -102,12 +136,12 @@ const Header = () => {
                 {/* Overlay */}
                 <div className={`fixed inset-0 bg-[#00000052] bg-opacity-40 z-40 transition-opacity duration-300 ${menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`} onClick={() => setMenuOpen(false)}></div>
                 {/* Side Menu con transición suave */}
-                <nav className={`fixed  top-0 right-0 h-full w-full  bg-white border-l shadow-lg z-50 flex flex-col transform transition-transform duration-300 ease-in-out ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                <nav className={`fixed  top-0 right-0 h-full w-full  bg-white border-l shadow-lg z-50 flex flex-col transform transition-transform duration-300 ease-in-out ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}>                    
                     <div className="px-4 py-4 flex items-center justify-between border-b">
                         {/* Logo a la izquierda */}
-                        <a href="/">
+                        <Link to="/">
                             <img src={logo} alt="Logo" className="w-16 h-auto mr-2" />
-                        </a>
+                        </Link>
                         <span className="font-bold text-lg text-left flex-1"></span>
                         <button onClick={() => setMenuOpen(false)}  aria-label="Cerrar menú">
                             {/* Icono de cruz (X) */}
@@ -117,53 +151,29 @@ const Header = () => {
                         </button>
                     </div>
                     <div className="px-4 py-2 flex-1 overflow-y-auto text-left">
-                                                <div className="flex flex-col items-start ">
+                                                  <div className="flex flex-col items-start ">
                             <button
-                                className="flex items-center w-full justify-start text-gray-700 py-2 gap-1"
+                                className="flex items-center w-full justify-start text-gray-700 py-3 gap-2 text-lg font-medium"
                                 onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
                             >
                                 Productos
-                                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                     <path d="M19 9l-7 7-7-7" />
                                 </svg>
-                            </button>
-                            {productsDropdownOpen && (
+                            </button>                            {productsDropdownOpen && (
                                 <div className=" border-1 ml-2 border-gray-300 pt-2 rounded">
-                                    <a href="#eolica" className="border-b-1 border-gray-100 px-4 block py-1 text-gray-600">Energía eólica</a>
-                                    <a href="#movil" className="border-b-1 border-gray-100 px-4 block py-1 text-gray-600">Energía sustentable movil</a>
-                                    <a href="#bombeo" className="border-b-1 border-gray-100 px-4 block py-1 text-gray-600">Bombeo solar</a>
-                                    <a href="#casas-rodantes" className="border-b-1 border-gray-100 px-4 block py-1 text-gray-600">Casas rodantes</a>
-                                    <a href="#soportes" className="border-b-1 border-gray-100 px-4 block py-1 text-gray-600">Soportes</a>
-                                    <a href="#kit-casas" className="px-4 block py-1 text-gray-600">Kit casas</a>
-                                    <a href="/productos" className="px-4 block py-2 text-gray-600 w-full border-t-1   border-gray-300">Todos los productos</a>
+                                    <Link to="/productos?categoria=electricidad-sin-red" className="border-b-1 border-gray-100 px-4 block py-2 text-gray-600 text-base">Electricidad donde no llega la red</Link>
+                                    <Link to="/productos?categoria=ahorro-combustibles" className="border-b-1 border-gray-100 px-4 block py-2 text-gray-600 text-base">Ahorro en combustibles fósiles</Link>
+                                    <Link to="/productos?categoria=soluciones-cortes" className="border-b-1 border-gray-100 px-4 block py-2 text-gray-600 text-base">Soluciones para cortes de luz</Link>
+                                    <Link to="/productos?categoria=ahorro-facturas" className="px-4 block py-2 text-gray-600 text-base">Ahorro en facturas de luz</Link>
+                                    <Link to="/productos" className="px-4 block py-3 text-gray-600 w-full border-t-1 border-gray-300 text-base font-medium">Todos los productos</Link>
                                 </div>
-                            )}
-                        </div>
-                        <div className="flex flex-col items-start">
-                            <button
-                                className="flex items-center w-full justify-start text-gray-700 py-2 gap-1"
-                                onClick={() => setServicesOpen(!servicesOpen)}
-                            >
-                                Servicios
-                                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                                    <path d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </button>
-                            {servicesOpen && (
-                                <div className="border-1 ml-2 border-gray-300 pt-2 rounded">
-                                    <a href="#alquiler" className="px-4 block py-1 text-gray-600">Alquiler</a>
-                                    <a href="#ingenieria" className="px-4 block py-1 text-gray-600">Ingeniería</a>
-                                    <a href="#servicio-tecnico" className="px-4 block py-1 text-gray-600">Servicio Técnico</a>
-                                    <a href="/servicios" className="px-4 block py-2 text-gray-600 w-full border-t-1   border-gray-300">Todos los servicios</a>
-
-                                </div>
-                            )}
-                        </div>
-
-                        <a href="#nosotros" className="block text-gray-700 py-2">Nosotros</a>
-                        <a href="#proyectos" className="block text-gray-700 py-2">Proyectos</a>
-                        <a href="#calculador" className="block text-gray-700 py-2">CalculadorDeConsumo</a>
-                        <a href="#contacto" className="block text-gray-700 py-2">Contacto</a>
+                            )}                        
+                            </div>                        
+                            <button onClick={handleServiciosClick} className="block text-gray-700 py-3 text-lg font-medium cursor-pointer">Servicios</button>
+                        <button onClick={handleProyectosClick} className="block text-gray-700 py-3 text-lg font-medium cursor-pointer">Proyectos</button>
+                        <Link to="/calculador" className="block text-gray-700 py-3 text-lg font-medium">Calculador de consumo</Link>
+                        <Link to="/contacto" className="block text-gray-700 py-3 text-lg font-medium">Contacto</Link>
                     </div>
                 </nav>
             </div>
