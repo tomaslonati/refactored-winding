@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import logo from "../../assets/brand/shortcut.png"
+import { ASSETS } from "../../utils/assets";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -75,10 +75,9 @@ const Header = () => {
     return (
         <header className="bg-white w-full mx-auto fixed top-0 z-50 shadow-md">
             <div className="m-0 px-4 py-3 flex items-center justify-between max-w-[1240px] mx-auto">                {/* Logo a la izquierda */}
-                <div className="flex-shrink-0 flex items-center">
-                    <Link to="/">
+                <div className="flex-shrink-0 flex items-center">                    <Link to="/">
                         <img
-                            src={logo}
+                            src={ASSETS.brand.logo}
                             alt="Logo"
                             className="w-20"
                         />
@@ -87,7 +86,7 @@ const Header = () => {
 
                 {/* Menú centrado */}
                 <nav className="hidden md:flex flex-1 justify-center space-x-6 items-center gap-6">
-                                        <div className="relative"
+                    <div className="relative"
                         onMouseEnter={() => setProductsDropdownOpen(true)}
                         onMouseLeave={() => setProductsDropdownOpen(false)}
                     >
@@ -100,17 +99,30 @@ const Header = () => {
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                 <path d="M19 9l-7 7-7-7" />
                             </svg>
-                        </button>                          
-                        <div className={`${productsDropdownOpen ? 'block' : 'hidden'} absolute left-0 mt-0 w-56 text-black text-left bg-white border rounded shadow-lg z-10`}
+                        </button>                            
+                        <div className={`${productsDropdownOpen ? 'block' : 'hidden'} absolute left-0 mt-0 w-64 text-black text-left bg-white border rounded shadow-lg z-10`}
                         >
-                            <Link to="/productos?categoria=electricidad-sin-red" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Electricidad donde no llega la red</Link>
-                            <Link to="/productos?categoria=ahorro-combustibles" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Ahorro en combustibles fósiles</Link>
-                            <Link to="/productos?categoria=soluciones-cortes" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Soluciones para cortes de luz</Link>
-                            <Link to="/productos?categoria=ahorro-facturas" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Ahorro en facturas de luz</Link>
+                            <Link to="/productos?cat=electricidad-donde-no-llega-la-red" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Electricidad donde no llega la red</Link>
+                            <Link to="/productos?cat=ahorro-de-combustibles-fsiles" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Ahorro en combustibles fósiles</Link>
+                            <Link to="/productos?cat=soluciones-para-cortes-de-luz" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Soluciones para cortes de luz</Link>
+                            <Link to="/productos?cat=ahorro-en-facturas-de-luz" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100">Ahorro en facturas de luz</Link>
                             <Link to="/productos" className="block px-4 py-2 text-sm  border-t-1   border-gray-300 text-gray-600 hover:bg-blue-100">Todos los productos</Link>
-                        </div>                    </div>                    <button onClick={handleServiciosClick} className="text-gray-700 hover:text-gray-500 cursor-pointer">Servicios</button>
-                    <button onClick={handleProyectosClick} className="text-gray-700 hover:text-gray-500 cursor-pointer">Proyectos</button>
-                    <Link to="/calculador" className="text-gray-700 hover:text-gray-500">Calculador de consumo</Link>
+                        </div>
+                    </div>                    
+                    <button 
+                        onClick={handleServiciosClick} 
+                        className="text-gray-700 hover:text-gray-500 cursor-pointer">
+                        Servicios
+                    </button>
+                    <button
+                        onClick={handleProyectosClick}
+                        className="text-gray-700 hover:text-gray-500 cursor-pointer">
+                        Proyectos
+                    </button>
+                    <Link to="/calculador"
+                        className="text-gray-700 hover:text-gray-500">
+                        Calculador de consumo
+                    </Link>
                 </nav>                {/* Contacto a la derecha */}
                 <div className="hidden md:flex flex-shrink-0 items-center">
                     <Link to="/contacto" className="text-[#0071c6] font-bold px-4 py-4  transition-colors">Contacto</Link>
@@ -138,9 +150,8 @@ const Header = () => {
                 {/* Side Menu con transición suave */}
                 <nav className={`fixed  top-0 right-0 h-full w-full  bg-white border-l shadow-lg z-50 flex flex-col transform transition-transform duration-300 ease-in-out ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}>                    
                     <div className="px-4 py-4 flex items-center justify-between border-b">
-                        {/* Logo a la izquierda */}
-                        <Link to="/">
-                            <img src={logo} alt="Logo" className="w-16 h-auto mr-2" />
+                        {/* Logo a la izquierda */}                        <Link to="/">
+                            <img src={ASSETS.brand.logo} alt="Logo" className="w-16 h-auto mr-2" />
                         </Link>
                         <span className="font-bold text-lg text-left flex-1"></span>
                         <button onClick={() => setMenuOpen(false)}  aria-label="Cerrar menú">
@@ -162,13 +173,13 @@ const Header = () => {
                                 </svg>
                             </button>                            {productsDropdownOpen && (
                                 <div className=" border-1 ml-2 border-gray-300 pt-2 rounded">
-                                    <Link to="/productos?categoria=electricidad-sin-red" className="border-b-1 border-gray-100 px-4 block py-2 text-gray-600 text-base">Electricidad donde no llega la red</Link>
-                                    <Link to="/productos?categoria=ahorro-combustibles" className="border-b-1 border-gray-100 px-4 block py-2 text-gray-600 text-base">Ahorro en combustibles fósiles</Link>
-                                    <Link to="/productos?categoria=soluciones-cortes" className="border-b-1 border-gray-100 px-4 block py-2 text-gray-600 text-base">Soluciones para cortes de luz</Link>
-                                    <Link to="/productos?categoria=ahorro-facturas" className="px-4 block py-2 text-gray-600 text-base">Ahorro en facturas de luz</Link>
+                                    <Link to="/productos?cat=electricidad-donde-no-llega-la-red" className="border-b-1 border-gray-100 px-4 block py-2 text-gray-600 text-base">Electricidad donde no llega la red</Link>
+                                    <Link to="/productos?cat=ahorro-de-combustibles-fosiles" className="border-b-1 border-gray-100 px-4 block py-2 text-gray-600 text-base">Ahorro en combustibles fósiles</Link>
+                                    <Link to="/productos?cat=soluciones-para-cortes-de-luz" className="border-b-1 border-gray-100 px-4 block py-2 text-gray-600 text-base">Soluciones para cortes de luz</Link>
+                                    <Link to="/productos?cat=ahorro-en-facturas-de-luz" className="px-4 block py-2 text-gray-600 text-base">Ahorro en facturas de luz</Link>
                                     <Link to="/productos" className="px-4 block py-3 text-gray-600 w-full border-t-1 border-gray-300 text-base font-medium">Todos los productos</Link>
                                 </div>
-                            )}                        
+                            )}
                             </div>                        
                             <button onClick={handleServiciosClick} className="block text-gray-700 py-3 text-lg font-medium cursor-pointer">Servicios</button>
                         <button onClick={handleProyectosClick} className="block text-gray-700 py-3 text-lg font-medium cursor-pointer">Proyectos</button>

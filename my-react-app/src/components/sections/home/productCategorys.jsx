@@ -1,9 +1,6 @@
 import ProductCategoryCard from "../../ui/productCategoryCard";
 import { Button, SectionHeader } from "../../common";
-import electricidadIcon from "../../../assets/home/electricidad-icon.png";
-import ahorroIcon from "../../../assets/home/ahorro-icon.png";
-import solucionesIcon from "../../../assets/home/soluciones-icon.png";
-import ahorroFacIcon from "../../../assets/home/ahorro-fac-icon.png";
+import { ASSETS } from "../../../utils/assets";
 
 const ProductCategory = () => {
     return (        
@@ -14,23 +11,22 @@ const ProductCategory = () => {
            />           <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 w-full max-w-[1240px] mx-auto lg:px-4">
                 <ProductCategoryCard
                     name="Electricidad donde no llega la red"
-                    image={electricidadIcon}
-                    link="/productos?categoria=electricidad-sin-red"
-                />
-                <ProductCategoryCard
+                    image={ASSETS.home.electricidadIcon}
+                    link="/productos?cat=electricidad-donde-no-llega-la-red"
+                />                <ProductCategoryCard
                     name="Ahorro de combustibles fósiles"
-                    image={ahorroIcon}
-                    link="/productos?categoria=ahorro-combustibles"
+                    image={ASSETS.home.ahorroIcon}
+                    link="/productos?cat=ahorro-de-combustibles-fosiles"
                 />
                 <ProductCategoryCard
                     name="Soluciones para cortes de luz"
-                    image={solucionesIcon}
-                    link="/productos?categoria=soluciones-cortes"
+                    image={ASSETS.home.solucionesIcon}
+                    link="/productos?cat=soluciones-para-cortes-de-luz"
                 />
                 <ProductCategoryCard
                     name="Ahorro en facturas de luz"
-                    image={ahorroFacIcon}
-                    link="/productos?categoria=ahorro-facturas"
+                    image={ASSETS.home.ahorroFacIcon}
+                    link="/productos?cat=ahorro-en-facturas-de-luz"
                 />
            </div>
                 <Button 

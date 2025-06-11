@@ -1,14 +1,13 @@
 
-import reconocimientoIcon from "../../../assets/home/reconocimiento-icon.png";
-import genImg from "../../../assets/home/gen.png";
+import { ASSETS } from "../../../utils/assets";
 
 const BannerGen = () => {
     return (
-        <section className="mt-20 lg:mt-36 flex flex-col relative w-full max-w-7xl mx-auto lg:pt-4 ">
+        <section className="mt-20 lg:mt-36 flex flex-col relative w-full max-w-[1240px] mx-auto lg:pt-4 ">
             <div className="bg-gradient-to-r from-[#1C88BC] to-[#65BB91]  lg:rounded-xl relative overflow-hidden">
                 {/* Ícono de reconocimiento */}                <div className="absolute top-6 left-6 lg:top-8 lg:left-8 z-10">
                     <img 
-                        src={reconocimientoIcon} 
+                        src={ASSETS.home.reconocimientoIcon} 
                         alt="ícono de reconocimiento" 
                         className="w-16 lg:w-20"
                     />
@@ -22,10 +21,9 @@ const BannerGen = () => {
                         <p className="text-base lg:text-lg font-light opacity-95">
                             Seleccionados entre los 10 mejores emprendedores de Argentina del 2021
                         </p>
-                    </div>
-                      <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+                    </div>                    <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
                         <img 
-                            src={genImg}
+                            src={ASSETS.home.genImg}
                             alt="GEN logo"
                             className="lg:p-20 px-14 w-full h-auto object-contain"
                         />

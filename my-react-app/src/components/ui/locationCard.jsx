@@ -1,4 +1,4 @@
-import locationIcon from '../../assets/home/locationIcon.png';
+import { ASSETS } from "../../utils/assets";
 
 const LocationCard = ({ name, text, link }) => {
     const handleClick = () => {
@@ -32,10 +32,9 @@ const LocationCard = ({ name, text, link }) => {
                 </p>
             </div>
 
-            {/* Contenedor de la imagen */}
-            <div className="flex justify-end mt-4">
+            {/* Contenedor de la imagen */}            <div className="flex justify-end mt-4">
                 <img 
-                    src={locationIcon}
+                    src={ASSETS.home.locationIcon}
                     alt="location icon"
                     className="w-10 h-10"
                 />

@@ -1,29 +1,31 @@
 import LocationCard from "../../ui/locationCard";
 import Gallery from "../../ui/gallery";
 import { Button, SectionHeader } from "../../common";
-import img1 from "../../../assets/home/gallery/1.png";
-import img2 from "../../../assets/home/gallery/2.png";
-import img3 from "../../../assets/home/gallery/3.png";
-import img4 from "../../../assets/home/gallery/4.png";
-import img5 from "../../../assets/home/gallery/5.png";
-import img6 from "../../../assets/home/gallery/6.png";
-import img7 from "../../../assets/home/gallery/7.png";
-import img8 from "../../../assets/home/gallery/8.png";
-import img10 from "../../../assets/home/gallery/10.png";
-import img11 from "../../../assets/home/gallery/11.png";
-import img12 from "../../../assets/home/gallery/12.png";
-import img13 from "../../../assets/home/gallery/13.png";
-import img14 from "../../../assets/home/gallery/14.png";
-import img15 from "../../../assets/home/gallery/15.png";
-import img17 from "../../../assets/home/gallery/17.png";
-import img19 from "../../../assets/home/gallery/19.png";
-import img20 from "../../../assets/home/gallery/20.png";
-import img21 from "../../../assets/home/gallery/21.png";
-import img22 from "../../../assets/home/gallery/22.png";
+import { ASSETS } from "../../../utils/assets";
 import { useState } from "react";
 
 const SomosWinding = () => {
-    const images = [img1, img2, img3, img4, img5, img6, img7, img8, img10, img11, img12, img13, img14, img15, img17, img19, img20, img21, img22];
+    const images = [
+        ASSETS.home.gallery.img1,
+        ASSETS.home.gallery.img2, 
+        ASSETS.home.gallery.img3,
+        ASSETS.home.gallery.img4,
+        ASSETS.home.gallery.img5,
+        ASSETS.home.gallery.img6,
+        ASSETS.home.gallery.img7,
+        ASSETS.home.gallery.img8,
+        ASSETS.home.gallery.img10,
+        ASSETS.home.gallery.img11,
+        ASSETS.home.gallery.img12,
+        ASSETS.home.gallery.img13,
+        ASSETS.home.gallery.img14,
+        ASSETS.home.gallery.img15,
+        ASSETS.home.gallery.img17,
+        ASSETS.home.gallery.img19,
+        ASSETS.home.gallery.img20,
+        ASSETS.home.gallery.img21,
+        ASSETS.home.gallery.img22
+    ];
     const [open, setOpen] = useState(false);
     const [initialIndex, setInitialIndex] = useState(0);
 

@@ -1,8 +1,6 @@
 import ServiceCard from "../../ui/serviceCard";
 import { Button, SectionHeader } from "../../common";
-import mantenimientoImg from "../../../assets/home/mantenimiento-card.png";
-import monitoreoImg from "../../../assets/home/monitoreo-card.png";
-import instalacionImg from "../../../assets/home/instalacion-card.png";
+import { ASSETS } from "../../../utils/assets";
 
 const Services = () => {
     return (        
@@ -10,18 +8,19 @@ const Services = () => {
         <SectionHeader 
             title="Servicios"
             description="Acompañamiento personalizado"
-        />        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 w-full max-w-[1240px] mx-auto lg:px-4">
+        />        
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 w-full max-w-[1240px] mx-auto lg:px-4">
             <ServiceCard
                 name="Mantenimiento"
-                image={mantenimientoImg}
+                image={ASSETS.home.mantenimientoCard}
             />
             <ServiceCard
                 name="Monitoreo"
-                image={monitoreoImg}
+                image={ASSETS.home.monitoreoCard}
             />
             <ServiceCard
                 name="Instalación"
-                image={instalacionImg}
+                image={ASSETS.home.instalacionCard}
             />
         </div>
         <Button 

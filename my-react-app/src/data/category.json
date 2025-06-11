@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "nombre": "Todos"
+  },
+  {
+    "id": 1,
+    "nombre": "Electricidad donde no llega la red"
+  },
+  {
+    "id": 2,
+    "nombre": "Ahorro de combustibles fósiles"
+  },
+  {
+    "id": 3,
+    "nombre": "Soluciones para cortes de luz"
+  },
+  {
+    "id": 4,
+    "nombre": "Ahorro en facturas de luz"
+  }
+]

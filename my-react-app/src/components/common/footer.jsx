@@ -1,6 +1,6 @@
 import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
-import logo from '../../assets/brand/blanco.png';
+import { ASSETS } from "../../utils/assets";
 
 const Footer = () => {
     return (
@@ -12,16 +12,15 @@ const Footer = () => {
         >
             {/* Sección principal del footer */}
             <div className="flex flex-col lg:flex-row justify-between items-center px-[10%] py-20 gap-6">
-                {/* Logo */}
-                <div className="flex-shrink-0">
+                {/* Logo */}                <div className="flex-shrink-0">
                     <a href="/" className="block">
                         <img 
-                            src={logo} 
+                            src={ASSETS.brand.logoWhite} 
                             alt="Grupo Winding El Calafate" 
                             className=""
                         />
                     </a>
-                </div>                
+                </div>
                 {/* Información de contacto y redes sociales */}
                 <div className="flex flex-col lg:flex-row gap-3 lg:gap-22 text-center items-center lg:text-left mt-4 lg:mt-0">
                     {/* Columna 1: WhatsApp y Email */}
