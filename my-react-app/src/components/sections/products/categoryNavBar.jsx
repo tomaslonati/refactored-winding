@@ -64,7 +64,7 @@ const CategoryNavBar = ({ onCategoryChange }) => {
       <div className="max-w-[1240px] mx-auto px-4">
         <nav className="flex md:flex-wrap gap-2 py-4  overflow-x-auto md:overflow-x-visible scrollbar-hide">
           <div className="flex gap-2 md:flex-wrap min-w-max md:min-w-0 ">
-            {categories.map((cat) => (
+            {categories.filter(cat => cat.active === "true").map((cat) => (
               <Chip
                 key={cat.id}
                 label={cat.nombre}

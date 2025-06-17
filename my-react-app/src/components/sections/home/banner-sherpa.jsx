@@ -2,7 +2,7 @@ import Button from "../../common/button";
 import { ASSETS } from "../../../utils/assets";
 
 const BannerSherpa = () => {    const handleNavigate = () => {
-        window.location.href = '/react-demo/my-react-app/productos/sherpa';
+        window.location.href = '/react-demo/my-react-app/productos/sherpa-energia-modular-donde-estes';
     };
 
     return (
@@ -23,7 +23,8 @@ const BannerSherpa = () => {    const handleNavigate = () => {
                         <h1 className="text-4xl lg:text-5xl font-bold text-white text-left">Sistema SHERPA</h1>
                         <p className="text-base lg:text-lg font-light text-white">
                             Disponible bajo modalidad de alquiler, el sistema está pensado para brindar una solución flexible, económica y sustentable en proyectos temporales o de difícil acceso                
-                        </p>                        <div className="flex flex-row justify-center items-center gap-3">
+                        </p>                        
+                        <div className="flex flex-row justify-center items-center gap-3">
                             <img 
                                 className="w-[50px]" 
                                 src={ASSETS.home.argFlag} 

@@ -5,33 +5,38 @@
             "nombre": "TIS (Torre de Iluminación Solar)",
             "slug": "tis-torre-de-iluminacion-solar",
             "id_categoria": [
-                "1",
-                "2"
+                "1"
             ],
-            "imagen": "assets/home/04_estela.png",
+            "imagenes": [
+                "assets/products/02_tis.png",
+                "assets/products/02_tis_01.png"
+            ],
             "documentos": [
-                {}
+                {
+                    "Catálogo PDF": "https://example.com/catalogo-tis.pdf",
+                    "Ficha Técnica": "https://example.com/ficha-tecnica-tis.pdf"
+                }
             ],
             "descripcion_corta": "Sistema de iluminación móvil equipado con paneles solares, baterías de alto rendimiento y un sistema de control eficiente. Es ideal para proporcionar luz en entornos como minería, petroleras, construcción y otros escenarios industriales, sin depender de la red eléctrica.",
             "informacion": [
                 {
-                    "Características principales": [
-                        "Movilidad y Versatilidad: El TIS es fácil de trasladar y adaptable a terrenos difíciles, siendo perfecto para minería, petroleras, construcción y situaciones de emergencia.",
-                        "Eficiencia Energética: Funcionamiento 100% solar, sin consumo de combustible, completamente silencioso y sin emisiones de CO2.",
-                        "Iluminación de Alta Potencia: Equipado con luminarias LED de bajo consumo, con capacidad para iluminar grandes áreas de trabajo.",
-                        "Autonomía: Hasta 14 horas de iluminación continua (dependiendo del consumo), garantizando operación en cualquier condición climática."
-                    ],
-                    "Beneficios clave": [
-                        "Ahorro Económico: Cero consumos de combustible y bajo mantenimiento, lo que reduce costos operativos.",
-                        "Durabilidad: Baterías de alta duración con una vida útil de hasta 5 años, diseñadas para soportar uso intensivo en industrias como minería y petróleo.",
-                        "Sostenibilidad: Energía completamente renovable, sin huella de carbono, ideal para proyectos industriales que buscan minimizar su impacto ambiental.",
-                        "Venta Exclusiva: Disponible solo para venta, con opciones para distintas aplicaciones industriales, incluyendo minería y petroleras."
-                    ],
-                    "¿Por qué elegir TIS?": [
-                        "Sostenibilidad: Reduce la dependencia de combustibles fósiles, promoviendo el uso de energía limpia en sectores industriales clave.",
-                        "Calidad y Confiabilidad: Diseñada para un rendimiento óptimo en entornos exigentes, asegurando iluminación constante y eficiente.",
-                        "Soporte Integral: En GRUPO WINDING, te acompañamos desde la adquisición hasta el mantenimiento post venta, garantizando una experiencia completa con el TIS."
-                    ]
+                    "Características principales": {
+                        "Movilidad y Versatilidad": "El TIS es fácil de trasladar y adaptable a terrenos difíciles, siendo perfecto para minería, petroleras, construcción y situaciones de emergencia.",
+                        "Eficiencia Energética": "Funcionamiento 100% solar, sin consumo de combustible, completamente silencioso y sin emisiones de CO2.",
+                        "Iluminación de Alta Potencia": "Equipado con luminarias LED de bajo consumo, con capacidad para iluminar grandes áreas de trabajo.",
+                        "Autonomía": "Hasta 14 horas de iluminación continua (dependiendo del consumo), garantizando operación en cualquier condición climática."
+                    },
+                    "Beneficios clave": {
+                        "Ahorro Económico": "Cero consumos de combustible y bajo mantenimiento, lo que reduce costos operativos.",
+                        "Durabilidad": "Baterías de alta duración con una vida útil de hasta 5 años, diseñadas para soportar uso intensivo en industrias como minería y petróleo.",
+                        "Sostenibilidad": "Energía completamente renovable, sin huella de carbono, ideal para proyectos industriales que buscan minimizar su impacto ambiental.",
+                        "Venta Exclusiva": "Disponible solo para venta, con opciones para distintas aplicaciones industriales, incluyendo minería y petroleras."
+                    },
+                    "¿Por qué elegir TIS?": {
+                        "Sostenibilidad": "Reduce la dependencia de combustibles fósiles, promoviendo el uso de energía limpia en sectores industriales clave.",
+                        "Calidad y Confiabilidad": "Diseñada para un rendimiento óptimo en entornos exigentes, asegurando iluminación constante y eficiente.",
+                        "Soporte Integral": "En GRUPO WINDING, te acompañamos desde la adquisición hasta el mantenimiento post venta, garantizando una experiencia completa con el TIS."
+                    }
                 }
             ]
         },
@@ -40,32 +45,36 @@
             "nombre": "Grupo electrógeno solar (G.E.S)",
             "slug": "grupo-electrogeno-solar-ges",
             "id_categoria": [
-                "1",
-                "2"
+                "1"
             ],
-            "imagen": "",
+            "imagenes": [
+                "assets/products/03_grupo_electrogeno_solar.png"
+            ],
             "documentos": [
-                {}
+                {
+                    "Catálogo": "/assets/products/ges_catalogo.pdf",
+                    "Folleto": "/assets/products/Folleto GES.pdf"
+                }
             ],
             "descripcion_corta": "Tráiler solar equipado con paneles solares, baterías, inversor y tablero de distribución eléctrica, listo para suministrar energía a viviendas, comercios o construcciones.",
             "informacion": [
                 {
-                    "Características principales": [
-                        "Movilidad y Robustez: Tráiler trasladable, ágil y robusto, disponible para venta y alquiler.",
-                        "Eficiencia Energética: Cero consumos de combustible, super silencioso y sin emisiones de CO2.",
-                        "Versatilidad: Flexibilidad de uso con carro reforzado y posibilidad de carga eléctrica externa.",
-                        "Potencia: Equivalente a un grupo electrógeno de 8 kVA."
-                    ],
-                    "Beneficios clave": [
-                        "Económico: Bajo mantenimiento y ahorro en combustible.",
-                        "Durabilidad: Baterías de gel con vida útil de 5 años y equipo completo hasta 20 años.",
-                        "Autonomía: 2 días de uso normal sin sol y 12 kVA durante el día con generación solar."
-                    ],
-                    "¿Por qué elegirnos?": [
-                        "Sostenibilidad: Promueve el uso de energía renovable y reduce el impacto ambiental.",
-                        "Calidad y Confiabilidad: Diseñado para un rendimiento óptimo y consistente.",
-                        "Soporte Integral: Ofrecemos asistencia desde la compra hasta el mantenimiento postventa."
-                    ]
+                    "Características principales": {
+                        "Movilidad y Robustez": "Tráiler trasladable, ágil y robusto, disponible para venta y alquiler.",
+                        "Eficiencia Energética": "Cero consumos de combustible, super silencioso y sin emisiones de CO2.",
+                        "Versatilidad": "Flexibilidad de uso con carro reforzado y posibilidad de carga eléctrica externa.",
+                        "Potencia": "Equivalente a un grupo electrógeno de 8 kVA."
+                    },
+                    "Beneficios clave": {
+                        "Económico": "Bajo mantenimiento y ahorro en combustible.",
+                        "Durabilidad": "Baterías de gel con vida útil de 5 años y equipo completo hasta 20 años.",
+                        "Autonomía": "2 días de uso normal sin sol y 12 kVA durante el día con generación solar."
+                    },
+                    "¿Por qué elegirnos?": {
+                        "Sostenibilidad": "Promueve el uso de energía renovable y reduce el impacto ambiental.",
+                        "Calidad y Confiabilidad": "Diseñado para un rendimiento óptimo y consistente.",
+                        "Soporte Integral": "Ofrecemos asistencia desde la compra hasta el mantenimiento postventa."
+                    }
                 }
             ]
         },
@@ -74,35 +83,39 @@
             "nombre": "B.S.M - Bombeo Solar Móvil",
             "slug": "bsm-bombeo-solar-movil",
             "id_categoria": [
-                "1",
-                "2"
+                "5"
             ],
-            "imagen": "assets/home/04_hielo_av.png",
+            "imagenes": [
+                "assets/products/04_bsm_bombeo_solar_movil.png",
+                "assets/products/04_bsm_bombeo_solar_movil_01.png"
+            ],
             "documentos": [
-                {}
+                {
+                    "Catálogo": "/assets/products/bombeo_solar_movil.pdf"
+                }
             ],
             "descripcion_corta": "La solución eficiente y sostenible para tus necesidades de bombeo de agua. Tráiler equipado con bomba sumergible solar, mangueras, enrollador y paneles solares de diferentes potencias.",
             "informacion": [
                 {
-                    "Características del Producto": [
-                        "Tráiler robusto: Diseñado para durar, con iluminación reglamentaria, enganche para bocha y rueda de auxilio.",
-                        "Paneles solares de alta eficiencia: Diferentes potencias para adaptarse a tus necesidades.",
-                        "Bomba sumergible solar: Proporciona diferentes caudales y alturas manométricas según el modelo seleccionado."
-                    ],
-                    "Ideal para múltiples sectores": [
-                        "Agricultura: Riego eficiente sin depender de combustibles fósiles.",
-                        "Ganadería: Suministro de agua constante y confiable para el ganado.",
-                        "Minería: Bombeo de agua en ubicaciones remotas con recursos limitados.",
-                        "Turismo: Proyectos turísticos sostenibles en áreas aisladas."
-                    ],
-                    "Ventajas de B S M": [
-                        "Cero consumos de combustible: 100% solar, ecológico y económico.",
-                        "Super silencioso: Operación sin ruidos molestos, ideal para entornos tranquilos.",
-                        "Financiación y alquiler: Opciones flexibles para adaptarse a tu presupuesto.",
-                        "Confiabilidad técnica: Equipos de alta calidad y rendimiento garantizado.",
-                        "Bajo mantenimiento: Diseñado para ofrecer un funcionamiento continuo con el mínimo mantenimiento.",
-                        "Accesibilidad: Fácil de transportar e instalar en cualquier ubicación."
-                    ]
+                    "Características del Producto": {
+                        "Tráiler robusto": "Diseñado para durar, con iluminación reglamentaria, enganche para bocha y rueda de auxilio.",
+                        "Paneles solares de alta eficiencia": "Diferentes potencias para adaptarse a tus necesidades.",
+                        "Bomba sumergible solar": "Proporciona diferentes caudales y alturas manométricas según el modelo seleccionado."
+                    },
+                    "Ideal para múltiples sectores": {
+                        "Agricultura": "Riego eficiente sin depender de combustibles fósiles.",
+                        "Ganadería": "Suministro de agua constante y confiable para el ganado.",
+                        "Minería": "Bombeo de agua en ubicaciones remotas con recursos limitados.",
+                        "Turismo": "Proyectos turísticos sostenibles en áreas aisladas."
+                    },
+                    "Ventajas de B S M": {
+                        "Cero consumos de combustible": "100% solar, ecológico y económico.",
+                        "Super silencioso": "Operación sin ruidos molestos, ideal para entornos tranquilos.",
+                        "Financiación y alquiler": "Opciones flexibles para adaptarse a tu presupuesto.",
+                        "Confiabilidad técnica": "Equipos de alta calidad y rendimiento garantizado.",
+                        "Bajo mantenimiento": "Diseñado para ofrecer un funcionamiento continuo con el mínimo mantenimiento.",
+                        "Accesibilidad": "Fácil de transportar e instalar en cualquier ubicación."
+                    }
                 }
             ]
         },
@@ -111,39 +124,46 @@
             "nombre": "Solar Box - Equipo Portátil",
             "slug": "solar-box-equipo-portatil",
             "id_categoria": [
-                "1",
-                "2"
+                "1"
             ],
-            "imagen": "assets/home/04_oca.png",
+            "imagenes": [
+                "assets/products/05_solar_box.png",
+                "assets/products/05_solar_box_01.png",
+                "assets/products/05_solar_box_02.png",
+                "assets/products/05_solar_box_03.png"
+            ],
             "documentos": [
-                {}
+                {
+                    "Catálogo": "/assets/products/solar_box_catalogo.pdf",
+                    "Ficha Técnica": "/assets/products/solar_box_ficha_tecnica.pdf"
+                }
             ],
             "descripcion_corta": "Equipo portátil ideal para industria, eventos y turismo. Proporciona energía confiable y sostenible en cualquier lugar.",
             "informacion": [
                 {
-                    "Distintos usos": [
-                        "Energía para la industria del petróleo/minería",
-                        "Alimentación eléctrica para bombeo de agua industrial",
-                        "Estancias, gendarmería, ejército, prefectura, etc.",
-                        "Electricidad para eventos de gran potencia",
-                        "Puestos turísticos de esparcimiento"
-                    ],
-                    "Características Técnicas": [
-                        "Baterías: 2 de ciclo profundo de 225 Ah",
-                        "Inversor cargador: 1 de 3KVA",
-                        "Paneles rebatibles: 3 de 550 WPP",
-                        "Medidas: Compactas y fáciles de transportar"
-                    ],
-                    "Beneficios Clave": [
-                        "Producción Energética: 8 KW diarios disponibles",
-                        "Potencia Instantánea: 6 KW",
-                        "Autonomía: 24 horas sin sol"
-                    ],
-                    "¿Por Qué Elegir Solar Box?": [
-                        "Versatilidad y Portabilidad: Ideal para diversas aplicaciones y fácil de transportar.",
-                        "Eficiencia y Autonomía: Suministra energía continua incluso en ausencia de sol.",
-                        "Sostenibilidad: Promueve el uso de energía renovable y reduce el impacto ambiental."
-                    ]
+                    "Distintos usos": {
+                        "Industria del petróleo/minería": "Energía para la industria del petróleo/minería",
+                        "Bombeo de agua industrial": "Alimentación eléctrica para bombeo de agua industrial",
+                        "Instituciones gubernamentales": "Estancias, gendarmería, ejército, prefectura, etc.",
+                        "Eventos de gran potencia": "Electricidad para eventos de gran potencia",
+                        "Turismo": "Puestos turísticos de esparcimiento"
+                    },
+                    "Características Técnicas": {
+                        "Baterías": "2 de ciclo profundo de 225 Ah",
+                        "Inversor cargador": "1 de 3KVA",
+                        "Paneles rebatibles": "3 de 550 WPP",
+                        "Medidas": "Compactas y fáciles de transportar"
+                    },
+                    "Beneficios Clave": {
+                        "Producción Energética": "8 KW diarios disponibles",
+                        "Potencia Instantánea": "6 KW",
+                        "Autonomía": "24 horas sin sol"
+                    },
+                    "¿Por Qué Elegir Solar Box?": {
+                        "Versatilidad y Portabilidad": "Ideal para diversas aplicaciones y fácil de transportar.",
+                        "Eficiencia y Autonomía": "Suministra energía continua incluso en ausencia de sol.",
+                        "Sostenibilidad": "Promueve el uso de energía renovable y reduce el impacto ambiental."
+                    }
                 }
             ]
         },
@@ -155,28 +175,31 @@
                 "1",
                 "2"
             ],
-            "imagen": "assets/home/sherpa.png",
+            "imagenes": [
+                "assets/products/06_sherpa_energia_modular.png"
+            ],
             "documentos": [
-                {}
+                {
+                    "Catálogo": "/assets/products/catalogo sherpa 2025.pdf"
+                }
             ],
             "descripcion_corta": "Solución energética modular, portátil y escalable para zonas sin acceso a red o reducción de consumo fósil. Disponible para alquiler.",
             "informacion": [
                 {
-                    "Ventajas del sistema S.H.E.R.P.A.": [
-                        "Cero consumo de combustible",
-                        "Super silencioso",
-                        "Sin emisiones de CO₂",
-                        "Portátil y adaptable a distintos entornos",
-                        "Reducción de costos operativos y logísticos",
-                        "Posibilidad de escalar según necesidad",
-                        "Disponible para alquiler según requerimientos de potencia y duración"
-                    ],
-                    "Sistema ON GRID": [
-                        "Ideal para reducir el consumo eléctrico de red o de grupos electrógenos. Permite utilizar energía solar durante el día y, si la normativa lo permite, inyectar el excedente a la red."
-                    ],
-                    "Sistema OFF GRID": [
-                        "Completamente autónomo con baterías, inversores híbridos y generación solar. Incluye grupo electrógeno como respaldo para carga de baterías en caso necesario. Pensado para reemplazo total o parcial de generadores convencionales."
-                    ]
+                    "Ventajas del sistema S.H.E.R.P.A.": {
+                        "Cero consumo de combustible": "Sin emisiones de CO₂ y completamente sostenible",
+                        "Super silencioso": "Operación sin ruidos molestos",
+                        "Portátil y adaptable": "Se adapta a distintos entornos y necesidades",
+                        "Reducción de costos": "Reduce costos operativos y logísticos significativamente",
+                        "Escalabilidad": "Posibilidad de escalar según necesidad específica",
+                        "Disponibilidad": "Disponible para alquiler según requerimientos de potencia y duración"
+                    },
+                    "Sistema ON GRID": {
+                        "Descripción": "Ideal para reducir el consumo eléctrico de red o de grupos electrógenos. Permite utilizar energía solar durante el día y, si la normativa lo permite, inyectar el excedente a la red."
+                    },
+                    "Sistema OFF GRID": {
+                        "Descripción": "Completamente autónomo con baterías, inversores híbridos y generación solar. Incluye grupo electrógeno como respaldo para carga de baterías en caso necesario. Pensado para reemplazo total o parcial de generadores convencionales."
+                    }
                 }
             ]
         },
@@ -185,29 +208,32 @@
             "nombre": "EULE",
             "slug": "eule",
             "id_categoria": [
-                "1",
-                "2"
+                "1"
             ],
-            "imagen": "assets/home/04_tecnolab.png",
+            "imagenes": [
+                "assets/products/01_eule.png"
+            ],
             "documentos": [
-                {}
+                {
+                    "Catálogo": "/assets/products/eule.pdf"
+                }
             ],
             "descripcion_corta": "Aerogenerador silencioso y eficiente, ideal para hogares y lugares remotos. Energía renovable con bajo mantenimiento y alta durabilidad.",
             "informacion": [
                 {
-                    "Características": [
-                        "Aspas dobles patentadas que reducen ruido y turbulencias.",
-                        "Desarrollado en la Patagonia Argentina, óptimo para vientos fuertes.",
-                        "Genera energía desde 5 m/s de viento.",
-                        "Estructura resistente a ráfagas y condiciones extremas."
-                    ],
-                    "Ventajas": [
-                        "Independencia energética para hogares, estancias y lugares remotos.",
-                        "Durabilidad superior y bajo costo de mantenimiento.",
-                        "Fabricación y tecnología 100% argentina.",
-                        "Generador de larga vida útil y respaldo postventa.",
-                        "Opciones de financiación y soporte técnico."
-                    ]
+                    "Características": {
+                        "Aspas dobles patentadas": "Reducen ruido y turbulencias significativamente",
+                        "Desarrollo Patagónico": "Desarrollado en la Patagonia Argentina, óptimo para vientos fuertes",
+                        "Activación con viento bajo": "Genera energía desde 5 m/s de viento",
+                        "Estructura resistente": "Diseñado para soportar ráfagas y condiciones climáticas extremas"
+                    },
+                    "Ventajas": {
+                        "Independencia energética": "Ideal para hogares, estancias y lugares remotos",
+                        "Durabilidad superior": "Bajo costo de mantenimiento y larga vida útil",
+                        "Fabricación nacional": "Fabricación y tecnología 100% argentina",
+                        "Generador de larga vida": "Respaldo postventa garantizado",
+                        "Opciones flexibles": "Financiación disponible y soporte técnico integral"
+                    }
                 }
             ]
         },
@@ -216,31 +242,33 @@
             "nombre": "Bombeo solar manual",
             "slug": "bombeo-solar-manual",
             "id_categoria": [
-                "1",
-                "2"
+                "5"
             ],
-            "imagen": "assets/home/ahorro-fac-icon.png",
+            "imagenes": [
+                "assets/products/08_bombeo_solar_manual.png",
+                "assets/products/08_bombeo_solar_manual_01.png"
+            ],
             "documentos": [
                 {}
             ],
             "descripcion_corta": "Sistema que combina seguidores solares y bomba solar para maximizar el bombeo de agua diario con energía renovable y alta eficiencia.",
             "informacion": [
                 {
-                    "Ventajas": [
-                        "Extraordinaria mejora en la capacidad de bombeo diario.",
-                        "Mayor autonomía de agua captada por energía renovable, sin combustibles.",
-                        "Paneles solares perpendiculares al sol la mayor parte del día para máxima eficiencia.",
-                        "Bases en línea permiten combinar varios seguidores con un solo motor.",
-                        "Opción de control automático o manual."
-                    ],
-                    "Beneficios": [
-                        "Menor cantidad de paneles necesarios.",
-                        "Menor espacio físico ocupado.",
-                        "Mayor eficiencia energética con menor impacto ambiental.",
-                        "Ahorro en materiales y mano de obra comparado con soportes tradicionales.",
-                        "No requiere conocimientos previos para su instalación.",
-                        "Hasta 50% más de agua diaria."
-                    ]
+                    "Ventajas": {
+                        "Mejora extraordinaria": "Extraordinaria mejora en la capacidad de bombeo diario",
+                        "Mayor autonomía": "Mayor autonomía de agua captada por energía renovable, sin combustibles",
+                        "Máxima eficiencia": "Paneles solares perpendiculares al sol la mayor parte del día para máxima eficiencia",
+                        "Combinación en línea": "Bases en línea permiten combinar varios seguidores con un solo motor",
+                        "Control flexible": "Opción de control automático o manual"
+                    },
+                    "Beneficios": {
+                        "Menos paneles": "Menor cantidad de paneles necesarios",
+                        "Menos espacio": "Menor espacio físico ocupado",
+                        "Mayor eficiencia": "Mayor eficiencia energética con menor impacto ambiental",
+                        "Ahorro en materiales": "Ahorro en materiales y mano de obra comparado con soportes tradicionales",
+                        "Instalación simple": "No requiere conocimientos previos para su instalación",
+                        "Incremento de agua": "Hasta 50% más de agua diaria"
+                    }
                 }
             ]
         },
@@ -249,28 +277,31 @@
             "nombre": "Bombeo Solar de Alta Eficiencia",
             "slug": "bombeo-solar-de-alta-eficiencia",
             "id_categoria": [
-                "1",
-                "2"
+                "4"
             ],
-            "imagen": "assets/home/ahorro-icon.png",
+            "imagenes": [
+                "assets/products/10_bombeo_solar_fijo.png"
+            ],
             "documentos": [
-                {}
+                {
+                    "Catálogo": "/assets/products/bombeo_solar_alta_eficiencia.pdf"
+                }
             ],
             "descripcion_corta": "Sistema de bombeo solar avanzado con seguimiento solar automático para máxima eficiencia y mayor cantidad de agua bombeada.",
             "informacion": [
                 {
-                    "Características Principales": [
-                        "Seguimiento Solar Automático: Movimiento automático que optimiza la orientación de los paneles solares (160W a 450W).",
-                        "Bases en Línea: Instalación eficiente y organizada de los paneles.",
-                        "Control Inteligente: Sensores y actuador eléctrico potente, con opción de control automático o manual."
-                    ],
-                    "Ventajas": [
-                        "Eficiencia Energética: Mayor eficiencia y menor impacto ambiental.",
-                        "Reducción de Materiales: Menos paneles necesarios y ahorro en materiales y mano de obra.",
-                        "Fácil Instalación: No requiere conocimientos previos.",
-                        "Ahorro de Espacio: Menor superficie necesaria para la instalación.",
-                        "Aumento de Producción: Incrementa la captación en un 50%, resultando en más agua diaria bombeada."
-                    ]
+                    "Características Principales": {
+                        "Seguimiento Solar Automático": "Movimiento automático que optimiza la orientación de los paneles solares (160W a 450W)",
+                        "Bases en Línea": "Instalación eficiente y organizada de los paneles",
+                        "Control Inteligente": "Sensores y actuador eléctrico potente, con opción de control automático o manual"
+                    },
+                    "Ventajas": {
+                        "Eficiencia Energética": "Mayor eficiencia y menor impacto ambiental",
+                        "Reducción de Materiales": "Menos paneles necesarios y ahorro en materiales y mano de obra",
+                        "Fácil Instalación": "No requiere conocimientos previos",
+                        "Ahorro de Espacio": "Menor superficie necesaria para la instalación",
+                        "Aumento de Producción": "Incrementa la captación en un 50%, resultando en más agua diaria bombeada"
+                    }
                 }
             ]
         },
@@ -279,31 +310,32 @@
             "nombre": "Bombeo solar fijo",
             "slug": "bombeo-solar-fijo",
             "id_categoria": [
-                "1",
-                "2"
+                "4"
             ],
-            "imagen": "assets/home/ahorro-fac-icon.png",
+            "imagenes": [
+                "assets/products/10_bombeo_solar_fijo.png"
+            ],
             "documentos": [
                 {}
             ],
             "descripcion_corta": "Sistema fijo que combina seguidores solares y bomba solar para maximizar el bombeo de agua diario con energía renovable y alta eficiencia.",
             "informacion": [
                 {
-                    "Ventajas": [
-                        "Extraordinaria mejora en la capacidad de bombeo diario.",
-                        "Mayor autonomía de agua captada por energía renovable, sin combustibles.",
-                        "Paneles solares perpendiculares al sol la mayor parte del día para máxima eficiencia.",
-                        "Bases en línea permiten combinar varios seguidores con un solo motor.",
-                        "Opción de control automático o manual."
-                    ],
-                    "Beneficios": [
-                        "Menor cantidad de paneles necesarios.",
-                        "Menor espacio físico ocupado.",
-                        "Mayor eficiencia energética con menor impacto ambiental.",
-                        "Ahorro en materiales y mano de obra comparado con soportes tradicionales.",
-                        "No requiere conocimientos previos para su instalación.",
-                        "Hasta 50% más de agua diaria."
-                    ]
+                    "Ventajas": {
+                        "Mejora extraordinaria": "Extraordinaria mejora en la capacidad de bombeo diario",
+                        "Mayor autonomía": "Mayor autonomía de agua captada por energía renovable, sin combustibles",
+                        "Máxima eficiencia": "Paneles solares perpendiculares al sol la mayor parte del día para máxima eficiencia",
+                        "Combinación en línea": "Bases en línea permiten combinar varios seguidores con un solo motor",
+                        "Control flexible": "Opción de control automático o manual"
+                    },
+                    "Beneficios": {
+                        "Menos paneles": "Menor cantidad de paneles necesarios",
+                        "Menos espacio": "Menor espacio físico ocupado",
+                        "Mayor eficiencia": "Mayor eficiencia energética con menor impacto ambiental",
+                        "Ahorro en materiales": "Ahorro en materiales y mano de obra comparado con soportes tradicionales",
+                        "Instalación simple": "No requiere conocimientos previos para su instalación",
+                        "Incremento de agua": "Hasta 50% más de agua diaria"
+                    }
                 }
             ]
         },
@@ -312,22 +344,24 @@
             "nombre": "Soporte plegable casa rodante",
             "slug": "soporte-plegable-casa-rodante",
             "id_categoria": [
-                "1",
-                "2"
+                "6"
             ],
-            "imagen": "assets/home/soluciones-icon.png",
+            "imagenes": [
+                "assets/products/11_soporte_plegable_casa_rodante.png",
+                "assets/products/11_soporte_plegable_casa_rodante_01.png"
+            ],
             "documentos": [
                 {}
             ],
             "descripcion_corta": "Soporte plegable que maximiza la captación solar y la autonomía eléctrica en casas rodantes. Estructura sólida, fácil de usar y de alta resistencia.",
             "informacion": [
                 {
-                    "Ventajas": [
-                        "Aumenta significativamente la captación de energía solar.",
-                        "Herramienta ideal para lograr autonomía eléctrica absoluta en la casilla rodante.",
-                        "Estructura sólida, fácil de abrir y cerrar, y de alta resistencia en el tiempo.",
-                        "Altura optimizada para combinar con ECR y lograr una solución híbrida de máxima captación de energías renovables."
-                    ]
+                    "Ventajas": {
+                        "Captación aumentada": "Aumenta significativamente la captación de energía solar",
+                        "Autonomía eléctrica": "Herramienta ideal para lograr autonomía eléctrica absoluta en la casilla rodante",
+                        "Estructura sólida": "Estructura sólida, fácil de abrir y cerrar, y de alta resistencia en el tiempo",
+                        "Altura optimizada": "Altura optimizada para combinar con ECR y lograr una solución híbrida de máxima captación de energías renovables"
+                    }
                 }
             ]
         },
@@ -336,30 +370,34 @@
             "nombre": "GW Seguidores Solares (GWSS2 y GWSS1)",
             "slug": "gw-seguidores-solares-gwss2-y-gwss1",
             "id_categoria": [
-                "1",
-                "2"
+                "6"
             ],
-            "imagen": "assets/home/soluciones-icon.png",
+            "imagenes": [
+                "assets/products/13_gw_seguidores.png",
+                "assets/products/13_gw_seguidores_01.png"
+            ],
             "documentos": [
-                {}
+                {
+                    "Información": "/assets/products/seguidor_info.pdf"
+                }
             ],
             "descripcion_corta": "Seguidores solares de 2 y 1 eje que maximizan la captación solar, optimizan la eficiencia energética y reducen costos de materiales.",
             "informacion": [
                 {
-                    "GWSS2 - Seguidor Solar de 2 Ejes": [
-                        "Optimización Solar: Menor cantidad de paneles necesarios gracias a su eficiencia del 40% mayor en comparación con soportes fijos.",
-                        "Eficiencia Energética: Aumenta la producción energética y reduce el impacto ambiental.",
-                        "Ahorro en Materiales: Significativo ahorro en materiales y mano de obra para soportes.",
-                        "Soporte móvil que sigue automáticamente el recorrido del sol para máxima captación de energía."
-                    ],
-                    "GWSS1 - Seguidor Solar de 1 Eje": [
-                        "Sistema similar al GWSS2, diseñado con mayor robustez para adaptarse a climas extremos."
-                    ],
-                    "Beneficios Clave": [
-                        "Optimización Solar: Aprovecha al máximo la energía solar disponible.",
-                        "Sostenibilidad: Contribuye a un entorno más limpio.",
-                        "Calidad y Confiabilidad: Diseñado para un rendimiento óptimo en diversas condiciones."
-                    ]
+                    "GWSS2 - Seguidor Solar de 2 Ejes": {
+                        "Optimización Solar": "Menor cantidad de paneles necesarios gracias a su eficiencia del 40% mayor en comparación con soportes fijos",
+                        "Eficiencia Energética": "Aumenta la producción energética y reduce el impacto ambiental",
+                        "Ahorro en Materiales": "Significativo ahorro en materiales y mano de obra para soportes",
+                        "Seguimiento automático": "Soporte móvil que sigue automáticamente el recorrido del sol para máxima captación de energía"
+                    },
+                    "GWSS1 - Seguidor Solar de 1 Eje": {
+                        "Diseño robusto": "Sistema similar al GWSS2, diseñado con mayor robustez para adaptarse a climas extremos"
+                    },
+                    "Beneficios Clave": {
+                        "Optimización Solar": "Aprovecha al máximo la energía solar disponible",
+                        "Sostenibilidad": "Contribuye a un entorno más limpio",
+                        "Calidad y Confiabilidad": "Diseñado para un rendimiento óptimo en diversas condiciones"
+                    }
                 }
             ]
         },
@@ -368,22 +406,25 @@
             "nombre": "Soporte piso",
             "slug": "soporte-piso",
             "id_categoria": [
-                "1",
-                "2"
+                ""
             ],
-            "imagen": "assets/home/soluciones-icon.png",
+            "imagenes": [
+                "assets/products/14_soporte_piso.png",
+                "assets/products/14_soporte_piso_01.png",
+                "assets/products/14_soporte_piso_02.png"
+            ],
             "documentos": [
                 {}
             ],
             "descripcion_corta": "Soportes fijos de hierro reforzado, diseñados y comprobados para máxima resistencia y durabilidad en condiciones extremas.",
             "informacion": [
                 {
-                    "Ventajas": [
-                        "Fabricados en hierro reforzado para máxima resistencia.",
-                        "Comprobados en los territorios más extremos.",
-                        "Alta durabilidad y robustez.",
-                        "Reconocidos por su calidad en el mercado."
-                    ]
+                    "Ventajas": {
+                        "Material reforzado": "Fabricados en hierro reforzado para máxima resistencia",
+                        "Comprobado en extremos": "Comprobados en los territorios más extremos",
+                        "Alta durabilidad": "Alta durabilidad y robustez",
+                        "Calidad reconocida": "Reconocidos por su calidad en el mercado"
+                    }
                 }
             ]
         },
@@ -392,21 +433,25 @@
             "nombre": "Soporte techo",
             "slug": "soporte-techo",
             "id_categoria": [
-                "1",
-                "2"
+                ""
             ],
-            "imagen": "assets/home/soluciones-icon.png",
+            "imagenes": [
+                "assets/products/15_soporte_techo.png",
+                "assets/products/15_soporte_techo_01.png",
+                "assets/products/15_soporte_techo_02.png",
+                "assets/products/15_soporte_techo_03.png"
+            ],
             "documentos": [
                 {}
             ],
             "descripcion_corta": "Soportes para techo hechos a medida, con ángulo ajustable según estación, alta resistencia y durabilidad.",
             "informacion": [
                 {
-                    "Ventajas": [
-                        "Fabricados a medida para cada proyecto.",
-                        "Posibilidad de variar el ángulo según la estación del año.",
-                        "Alta resistencia y durabilidad."
-                    ]
+                    "Ventajas": {
+                        "Fabricación a medida": "Fabricados a medida para cada proyecto",
+                        "Ángulo variable": "Posibilidad de variar el ángulo según la estación del año",
+                        "Alta resistencia": "Alta resistencia y durabilidad"
+                    }
                 }
             ]
         },
@@ -415,21 +460,22 @@
             "nombre": "Soporte vertical",
             "slug": "soporte-vertical",
             "id_categoria": [
-                "1",
-                "2"
+                ""
             ],
-            "imagen": "assets/home/soluciones-icon.png",
+            "imagenes": [
+                "assets/products/16_soporte_vertical.png"
+            ],
             "documentos": [
                 {}
             ],
             "descripcion_corta": "Soportes verticales especiales, diseñados a medida para situaciones donde no se permite montar en piso o techo. Incluyen mecanismo rebatible para óptima adaptación diaria.",
             "informacion": [
                 {
-                    "Ventajas": [
-                        "Diseñados a medida del cliente para necesidades constructivas especiales.",
-                        "Solución ideal cuando no se permite montaje en piso o techo.",
-                        "Mecanismo rebatible para óptima adaptación manual diaria."
-                    ]
+                    "Ventajas": {
+                        "Diseño personalizado": "Diseñados a medida del cliente para necesidades constructivas especiales",
+                        "Solución alternativa": "Solución ideal cuando no se permite montaje en piso o techo",
+                        "Mecanismo rebatible": "Mecanismo rebatible para óptima adaptación manual diaria"
+                    }
                 }
             ]
         },
@@ -438,43 +484,107 @@
             "nombre": "Soporte especial",
             "slug": "soporte-especial",
             "id_categoria": [
-                "1",
-                "2"
+                ""
             ],
-            "imagen": "assets/home/soluciones-icon.png",
+            "imagenes": [
+                "assets/products/17_soporte_especial.png"
+            ],
             "documentos": [
                 {}
             ],
             "descripcion_corta": "Soportes diseñados a medida por nuestro departamento de ingeniería para requerimientos individuales.",
             "informacion": [
                 {
-                    "Ventajas": [
-                        "Diseño personalizado según los requerimientos del cliente.",
-                        "Soluciones únicas para necesidades constructivas especiales.",
-                        "Asesoramiento y desarrollo por parte de nuestro equipo de ingeniería."
-                    ]
+                    "Ventajas": {
+                        "Diseño personalizado": "Diseño personalizado según los requerimientos del cliente",
+                        "Soluciones únicas": "Soluciones únicas para necesidades constructivas especiales",
+                        "Asesoramiento profesional": "Asesoramiento y desarrollo por parte de nuestro equipo de ingeniería"
+                    }
                 }
             ]
         },
         {
             "id": 16,
-            "nombre": "Kit casas",
+            "nombre": "Kit casas - Solar",
+            "slug": "kit-casas-solar",
             "id_categoria": [
-                "1",
-                "2"
+                "3"
             ],
-            "imagen": "assets/home/soluciones-icon.png",
+            "imagenes": [
+                "assets/products/18_kit_casas_solares_portada.png",
+                "assets/products/18_kit_casas-1.png",
+                "assets/products/18_kit_casas-2.png",
+                "assets/products/18_kit_casas-3.png",
+                "assets/products/18_kit_casas-4.png",
+                "assets/products/18_kit_casas.png"
+            ],
             "documentos": [
-                {}
+                {
+                    "Kit Chico": "/assets/products/kit-mediana.pdf",
+                    "Kit Mediano": "/assets/products/kit-mediana.pdf",
+                    "Kit Grande": "/assets/products/kit-grande.pdf",
+                    "Kit Grande Full": "/assets/products/kit-grande-full.pdf",
+                    "Infografía": "/assets/products/infogragia-kit.pdf"
+                }
             ],
             "descripcion_corta": "Venta e instalación de sistemas completos de energías renovables para casas y comercios, dimensionados por nuestro estudio de ingeniería.",
             "informacion": [
                 {
-                    "Ventajas": [
-                        "Soluciones llave en mano para viviendas y comercios.",
-                        "Dimensionamiento profesional según consumo real.",
-                        "Instalación y soporte integral por Grupo Winding."
-                    ]
+                    "Ventajas": {
+                        "Soluciones llave en mano": "Soluciones llave en mano para viviendas y comercios",
+                        "Dimensionamiento profesional": "Dimensionamiento profesional según consumo real",
+                        "Soporte integral": "Instalación y soporte integral por Grupo Winding"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "nombre": "Kit casas - Cortes de luz",
+            "slug": "kit-casas-cortes-de-luz",
+            "id_categoria": [
+                "3"
+            ],
+            "imagenes": [
+                "assets/products/18_kit_cortes_de_luz.png"
+            ],
+            "documentos": [
+                {
+                    "Catálogo": "/assets/products/corte-luz.pdf"
+                }
+            ],
+            "descripcion_corta": "Kit de emergencia para mantener energía en artefactos indispensables ante cortes de suministro eléctrico, con posibilidad de expandir con paneles solares.",
+            "informacion": [
+                {
+                    "¿Qué es?": {
+                        "Kit de emergencia": "Los kit de emergencia son muy útiles para mantener la energía eléctrica en artefactos indispensables como calderas, heladeras, iluminación, WIFI, TV entre otros, ante los cortes de suministro eléctrico de la red pública.",
+                        "Sistemas expandibles": "Estos sistemas están pensados a futuro, con la posibilidad de agregar paneles solares fotovoltaicos, y así convertirlas en sistemas solares completos y autosustentables, o lograr un considerable ahorro energético."
+                    }
+                },
+                {
+                    "¿Cómo funciona?": {
+                        "Con energía de red": "Cuando la red pública entrega energía eléctrica, es utilizada en el consumo, pero además carga las baterías del sistema.",
+                        "Sin energía de red": "Cuando se corta, las baterias se encargan de mantener la alimentación del consumo a través del inversor en forma automática, instantánea, segura y silenciosa."
+                    }
+                },
+                {
+                    "Ventajas": {
+                        "Primer paso": "Primer paso a la auto sustentabilidad energética",
+                        "Sin ruidos": "Funcionamiento silencioso",
+                        "Libre de mantenimiento": "No requiere mantenimiento constante",
+                        "Conmutación automática": "Cambio automático entre red y baterías",
+                        "Modo UPS": "Modo UPS con micro corte de 20ms",
+                        "Fácil instalación": "Fácil de instalar",
+                        "Expandible": "Posibilidad de agregar paneles solares, convirtiéndolo en equipo solar completo y/o para lograr ahorro energético"
+                    }
+                },
+                {
+                    "Modelos disponibles": {
+                        "Variedad según necesidades": "Los modelos varían según la carga de consumos necesarios a alimentar y la autonomía deseada",
+                        "Asesoramiento gratuito": "GRUPO WINDING tiene asesoramiento gratuito a través de sus redes",
+                        "Venta individual o kits": "GRUPO WINDING vende estos equipos individualmente pero además ofrece combinaciones para su fácil instalación y diferentes usos",
+                        "Capacidad variable": "La capacidad de las baterías puede variar según la autonomía que se requiera"
+                    }
                 }
             ]
         }

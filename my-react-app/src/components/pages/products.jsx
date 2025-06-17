@@ -23,9 +23,10 @@ function Products() {
         }
     };
 
-    // Efecto para filtrar productos cuando cambia la categoría
+    // Efecto para filtrar productos y hacer scroll al top cuando cambia la categoría
     useEffect(() => {
         filterProducts(selectedCategory);
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     }, [selectedCategory]);
 
     // Función para manejar cambio de categoría desde CategoryNavBar

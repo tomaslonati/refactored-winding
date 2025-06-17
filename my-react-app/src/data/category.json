@@ -1,22 +1,44 @@
 [
   {
     "id": 0,
-    "nombre": "Todos"
+    "nombre": "Ver todos",
+    "icon": "",
+    "active": "true"
   },
   {
     "id": 1,
-    "nombre": "Electricidad donde no llega la red"
+    "nombre": "Electricidad donde no llega la red",
+    "icon": "assets/home/electricidad-icon.png",
+    "active": "true"
   },
   {
     "id": 2,
-    "nombre": "Ahorro de combustibles fósiles"
+    "nombre": "Ahorro de combustibles grupos electrógenos",
+    "icon": "assets/home/ahorro-icon.png",
+    "active": "true"
   },
   {
     "id": 3,
-    "nombre": "Soluciones para cortes de luz"
+    "nombre": "Soluciones para cortes de luz",
+    "icon": "assets/home/soluciones-icon.png",
+    "active": "true"
   },
   {
     "id": 4,
-    "nombre": "Ahorro en facturas de luz"
+    "nombre": "Ahorro en facturas de luz",
+    "icon": "assets/home/ahorro-fac-icon.png",
+    "active": "false"
+  },
+  {
+    "id": 5,
+    "nombre": "Riego y bombeo de agua",
+    "icon": "assets/home/riego-y-bombeo.png",
+    "active": "true"
+  },
+  {
+    "id": 6,
+    "nombre": "Agua caliente y calefacción",
+    "icon": "assets/home/agua-caliente.png",
+    "active": "false"
   }
 ]

@@ -22,16 +22,14 @@ const Button = ({
         outline: "text-[#0070C6] border border-[#0070C6] bg-transparent hover:bg-[#0070C6] hover:text-white",
         ghost: "text-[#0070C6] bg-transparent hover:bg-[#0070C6]/10"
     };
-    
-    // Tamaños
+      // Tamaños con comportamiento responsive (más grandes en móvil)
     const sizes = {
-        small: "text-sm py-2 px-4",
-        medium: "text-sm md:text-base py-3 px-6",
-        large: "text-base md:text-lg py-4 px-8"
+        small: "text-base py-3 px-6 md:text-sm md:py-2 md:px-4",
+        medium: "text-base py-3 px-8 md:text-base md:py-3 md:px-6", 
+        large: "text-lg py-3 px-8 md:text-lg md:py-4 md:px-8"
     };
-    
-    // Estilos responsivos para width
-    const responsiveWidth = "w-full md:w-min md:text-nowrap text-nowrap";
+      // Estilos responsivos para width
+    const responsiveWidth = "w-full md:w-auto md:text-nowrap text-nowrap";
     
     // Combinación de clases
     const buttonClasses = `
