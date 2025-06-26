@@ -75,6 +75,21 @@ const Header = () => {
 
     // Filtrar categorías activas y que no sean "Todos"
     const activeCategories = categories.filter(cat => cat.active === "true" && cat.id !== 0);
+    
+    // Detectar categoría seleccionada desde la URL
+    const getCurrentCategory = () => {
+        if (location.pathname === '/productos') {
+            const params = new URLSearchParams(location.search);
+            const catSlug = params.get("cat");
+            if (catSlug) {
+                return activeCategories.find(cat => categoryToSlug(cat.nombre) === catSlug);
+            }
+        }
+        return null;
+    };
+    
+    const currentCategory = getCurrentCategory();
+    
     // Función para convertir nombre de categoría a slug para URL
     function categoryToSlug(categoryName) {
         return categoryName
@@ -143,8 +158,9 @@ const Header = () => {
                 <a
                   href="https://wa.me/5492966312854"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#0071c6] font-bold px-4 py-4 transition-colors"
+                  rel="noopener noreferrer "
+                  className="text-[#0071c6] font-bold px-4 py-4 transition-colors hidden lg:block"
+            
                 >
                   Contacto
                 </a>
@@ -171,7 +187,8 @@ const Header = () => {
                 {/* Side Menu con transición suave */}
                 <nav className={`fixed  top-0 right-0 h-full w-full  bg-white border-l shadow-lg z-50 flex flex-col transform transition-transform duration-300 ease-in-out ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}>                    
                     <div className="px-4 py-4 flex items-center justify-between border-b">
-                        {/* Logo a la izquierda */}                        <Link to="/">
+                        {/* Logo a la izquierda */}                        
+                        <Link to="/">
                             <img src={ASSETS.brand.logo} alt="Logo" className="w-16 h-auto mr-2" />
                         </Link>
                         <span className="font-bold text-lg text-left flex-1"></span>
@@ -185,36 +202,39 @@ const Header = () => {
                     <div className="px-4 py-2 flex-1 overflow-y-auto text-left">
                         <div className="flex flex-col items-start ">
                             <button
-                                className="flex items-center w-full justify-start text-gray-700 py-3 gap-2 text-lg font-medium"
+                                className="flex items-center w-full justify-start text-gray-700 py-3 gap-2 text-[22px] font-medium"
                                 onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
                             >
                                 Productos
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                     <path d="M19 9l-7 7-7-7" />
                                 </svg>
-                            </button>                            {productsDropdownOpen && (
+                            </button>                            
+                            {productsDropdownOpen && (
                                 <div className=" border-1 ml-2 border-gray-300 pt-2 rounded">
                                     {activeCategories.map(cat => (
                                         <Link
                                             key={cat.id}
                                             to={`/productos?cat=${categoryToSlug(cat.nombre)}`}
-                                            className="border-b-1 border-gray-100 px-4 block py-2 text-gray-600 text-base"
+                                            className="border-b-1 border-gray-100 px-4 block py-2 text-gray-600 text-[20px]"
+                                            onClick={() => setMenuOpen(false)}
                                         >
                                             {cat.nombre}
                                         </Link>
                                     ))}
-                                    <Link to="/productos" className="px-4 block py-3 text-gray-600 w-full border-t-1 border-gray-300 text-base font-medium">Ver todos</Link>
+                                    <Link to="/productos" className="px-4 block py-3 text-gray-600 w-full border-t-1 border-gray-300 text-[20px] font-medium" onClick={() => setMenuOpen(false)}>Ver todos</Link>
                                 </div>
                             )}
                         </div>                        
-                        <button onClick={handleServiciosClick} className="block text-gray-700 py-3 text-lg font-medium cursor-pointer">Servicios</button>
-                        <button onClick={handleProyectosClick} className="block text-gray-700 py-3 text-lg font-medium cursor-pointer">Proyectos</button>
-                        <Link to="/calculador" className="block text-gray-700 py-3 text-lg font-medium">Calculador de consumo</Link>
+                        <button onClick={e => { handleServiciosClick(e); setMenuOpen(false); }} className="block text-gray-700 py-3 text-[22px] font-medium cursor-pointer">Servicios</button>
+                        <button onClick={e => { handleProyectosClick(e); setMenuOpen(false); }} className="block text-gray-700 py-3 text-[22px] font-medium cursor-pointer">Proyectos</button>
+                        <Link to="/calculador" className="block text-gray-700 py-3 text-[22px] font-medium" onClick={() => setMenuOpen(false)}>Calculador de consumo</Link>
                         <a
                           href="https://wa.me/5492966312854"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="block text-gray-700 py-3 text-lg font-medium"
+                          className="hiddenlg:block text-gray-700 py-3 text-[22px] font-medium"
+                          onClick={() => setMenuOpen(false)}
                         >
                           Contacto
                         </a>

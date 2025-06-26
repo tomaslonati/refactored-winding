@@ -91,7 +91,8 @@ const SomosWinding = () => {
                     <div className="flex justify-end">
                         <Button 
                             variant="primary"
-                            to="/contacto"
+                            href="https://wa.me/5492993277282?text=Hola!%20Quiero%20más%20información%20sobre%20GRUPO%20WINDING"
+                            external={true}
                             className="mt-8"
                         >
                             Contactanos

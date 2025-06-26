@@ -258,7 +258,7 @@ const CalculadorDeConsumo = () => {  // Estado de los aparatos
           <div className="flex flex-wrap gap-4 justify-center mb-6">
             {APARATOS.map((a, i) => (
               <div key={a.id} className="flex flex-col items-center bg-blue-50 rounded-xl shadow p-3 w-32 min-h-[150px]">
-                <img src={`public/assets/calculador/${a.icono}`} alt={a.nombre} className="w-12 h-12 object-contain mb-1" />
+                <img src={`assets/calculador/${a.icono}`} alt={a.nombre} className="w-12 h-12 object-contain mb-1" />
                 <span className="text-xs text-center text-blue-900 min-h-[2.2em]">{a.nombre}</span>
                 <div className="flex items-center gap-2 mt-2">
                   <button type="button" onClick={() => dec(i)} className="bg-blue-600 hover:bg-blue-800 text-white rounded-full w-7 h-7 flex items-center justify-center text-lg">-</button>
@@ -381,16 +381,16 @@ const CalculadorDeConsumo = () => {  // Estado de los aparatos
               <h3 className="text-xl font-bold text-blue-700 mb-3">Resultado</h3>
               <div className="flex flex-row items-center gap-2 mb-2">
                 <span className="flex items-center gap-2 mb-1 flex-col">
-                  <img src="public/assets/calculador/soporte.png" alt="Panel solar" className="w-24 h-24 inline-block" />
+                  <img src="assets/calculador/soporte.png" alt="Panel solar" className="w-24 h-24 inline-block" />
                   Paneles necesarios: <b className="text-gray-900">{result.paneles}</b>
                 </span>
                 <span className="flex items-center gap-2 mb-1 flex-col">
-                  <img src="public/assets/calculador/varios.png" alt="Inversor" className="w-24 h-24 inline-block" />
+                  <img src="assets/calculador/varios.png" alt="Inversor" className="w-24 h-24 inline-block" />
                   Inversor necesario: <b className="text-gray-900">{result.potencia} W</b>
                 </span>
                 {result.combo.includes('eólico') && (
                   <span className="flex items-center gap-2 mb-1 flex-col">
-                    <img src="public/assets/calculador/eule.png" alt="Aerogenerador" className="w-24 h-24 inline-block" />
+                    <img src="assets/calculador/eule.png" alt="Aerogenerador" className="w-24 h-24 inline-block" />
                     Eólicos: <b className="text-gray-900">1 eólico winding</b>
                   </span>
                 )}

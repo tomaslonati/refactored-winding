@@ -9,7 +9,7 @@ import SomosWinding  from '../sections/home/somosWinding.jsx';
 
 function Home() {
     return (
-        <div className="w-full">
+        <div className="w-full bg-[#E6F4F8]">
             <Hero />
             <ProductCategory />
             <BannerSherpa />

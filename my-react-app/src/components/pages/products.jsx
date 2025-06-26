@@ -35,7 +35,7 @@ function Products() {
     };
 
     return (
-        <div className="w-full pt-[100px]">
+        <div className="w-full pt-[100px] bg-[#E6F4F8]">
             <CategoryNavBar onCategoryChange={handleCategoryChange} />
             <MenuList products={filteredProducts} />
         </div>

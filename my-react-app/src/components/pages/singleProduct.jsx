@@ -66,7 +66,7 @@ const SingleProduct = () => {
     };
 
     return (
-        <div className="w-full pt-[100px] min-h-screen lg:pt-[120px]">
+        <div className="w-full pt-[100px] min-h-screen lg:pt-[120px] bg-[#E6F4F8]">
             {/* Breadcrumb */}
             <div className="max-w-[1240px] mx-auto px-8 lg:px-4 py-4 ">
                 <nav className="flex items-start text-sm text-gray-600">
@@ -78,12 +78,13 @@ const SingleProduct = () => {
                 </nav>
             </div>
             {/* Contenido principal */}
-            <div className="max-w-[1240px] mx-auto px-8 lg:px-0 pb-20">
-                <div className="bg-white rounded-xl overflow-hidden">                    {/* Header del producto */}
+            <div className="max-w-[1240px] mx-auto px-8 lg:px-0 pb-20 bg-[#E6F4F8]">
+                <div className=" rounded-xl overflow-hidden">                    
+                    {/* Header del producto */}
                     <div className="grid grid-cols-1 lg:grid-cols-5 lg:gap-16 gap-10 py-6 px-0 lg:min-h-[420px] lg:p-4">
                         {/* Imagen o carrusel de imágenes con soporte touch */}
                         <div
-                            className="lg:col-span-3 flex items-center justify-center  rounded-xl  min-h-[320px] relative select-none w-full h-[320px] lg:h-[400px]"
+                            className="lg:col-span-3 flex items-center justify-center  rounded-xl   relative select-none w-full h-[240px] lg:h-[400px]"
                             onTouchStart={imagenes.length > 1 ? handleTouchStart : undefined}
                             onTouchMove={imagenes.length > 1 ? handleTouchMove : undefined}
                             onTouchEnd={imagenes.length > 1 ? handleTouchEnd : undefined}
@@ -163,9 +164,11 @@ const SingleProduct = () => {
                             <p className="text-gray-600 text-lg leading-relaxed mb-8">
                                 {product.descripcion_corta}
                             </p>                            {/* Botones de acción */}
-                            <div className="flex flex-col sm:flex-row gap-4 md:flex-wrap">                                <Button
+                            <div className="flex flex-col sm:flex-row gap-4 md:flex-wrap">                                
+                                <Button
                                     variant="primary"
-                                    to="/contacto"
+                                    href={`https://wa.me/5492993277282?text=Hola!%20Quiero%20información%20sobre%20el%20producto:%20${encodeURIComponent(product.nombre)}`}
+                                    external={true}
                                     size="medium"
                                 >
                                     Solicitar información
@@ -180,9 +183,16 @@ const SingleProduct = () => {
                                                 <Button
                                                     key={`${index}-${entryIndex}`}
                                                     variant="outline"
-                                                    href={enlace}
+                                                    href={
+                                                        enlace.startsWith('http')
+                                                            ? enlace
+                                                            : enlace.startsWith('/assets/products/')
+                                                                ? enlace
+                                                                : `/assets/products/${enlace.replace(/^\/+/, '')}`
+                                                    }
                                                     external={true}
                                                     size="medium"
+                                                    className="bg-white"
                                                 >
                                                     {titulo}
                                                 </Button>
@@ -192,7 +202,8 @@ const SingleProduct = () => {
                                 }
                             </div>
                         </div>
-                    </div>                    {/* Información detallada */}
+                    </div>                    
+                    {/* Información detallada */}
                     {product.informacion && product.informacion.length > 0 && (
                         <div className="lg:pb-12 lg:pt-20">
                             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

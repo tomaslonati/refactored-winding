@@ -1,11 +1,11 @@
-
 import { ASSETS } from "../../../utils/assets";
 
 const BannerGen = () => {
     return (
         <section className="mt-20 lg:mt-36 flex flex-col relative w-full max-w-[1240px] mx-auto lg:pt-4 ">
             <div className="bg-gradient-to-r from-[#1C88BC] to-[#65BB91]  lg:rounded-xl relative overflow-hidden">
-                {/* Ícono de reconocimiento */}                <div className="absolute top-6 left-6 lg:top-8 lg:left-8 z-10">
+                {/* Ícono de reconocimiento */}                
+                <div className="absolute top-6 left-1/2 -translate-x-1/2 lg:top-8 lg:left-8 lg:translate-x-0 z-10">
                     <img 
                         src={ASSETS.home.reconocimientoIcon} 
                         alt="ícono de reconocimiento" 

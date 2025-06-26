@@ -37,7 +37,7 @@ const InfoSection = ({ title, items = [], className = "" }) => {
 
     return (
         <div className={`bg-gray-50 rounded-xl shadow-[0px_2px_14px_0px_rgba(2,110,192,0.10)] ${className}`}>
-            <h3 className="text-[22px] font-semibold text-[#1A1A1A] bg-[#E5F4FF] p-6 rounded-xl">
+            <h3 className="text-[22px] font-semibold text-[#1A1A1A] bg-[#E5F4FF] p-6 rounded-t-xl">
                 {title}
             </h3>
             <div className=" pt-0">

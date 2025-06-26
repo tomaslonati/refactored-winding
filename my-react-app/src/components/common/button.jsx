@@ -19,7 +19,7 @@ const Button = ({
     const variants = {
         primary: "text-[#FFF] bg-[linear-gradient(90deg,_#0070C6_0%,_#1E88C9_100%)] hover:bg-[linear-gradient(70deg,_#0070C6_40%,_#1E88C9_80%)] hover:shadow-xl hover:backdrop-blur-sm",
         secondary: "text-[#FFF] border border-[#fff] bg-transparent hover:bg-white/05 hover:shadow-xl hover:backdrop-blur-sm hover:border-[#b3e0ff]",
-        outline: "text-[#0070C6] border border-[#0070C6] bg-transparent hover:bg-[#0070C6] hover:text-white",
+        outline: "text-[#0070C6] border border-[#0070C6] bg-transparent  hover:shadow-xl hover:backdrop-blur-sm",
         ghost: "text-[#0070C6] bg-transparent hover:bg-[#0070C6]/10"
     };
       // Tamaños con comportamiento responsive (más grandes en móvil)
@@ -65,10 +65,12 @@ const Button = ({
     
     // Si es un enlace externo, usar <a>
     if (href) {
+        const isExternal = external || (!isInternalLink(href));
         return (
             <a
                 href={href}
                 className={buttonClasses}
+                {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 {...props}
             >
                 {children}

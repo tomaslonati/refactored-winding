@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import Chip from "../../common/chip";
 import categories from "../../../data/category.json";
@@ -54,24 +54,62 @@ function useCategoryParam() {
 
 const CategoryNavBar = ({ onCategoryChange }) => {
   const [selected, setSelected] = useCategoryParam();
+  const navRef = useRef(null);
 
   useEffect(() => {
     if (onCategoryChange) onCategoryChange(selected);
+    
+    // Hacer scroll a la izquierda cuando cambia la categoría
+    if (navRef.current) {
+      navRef.current.scrollLeft = 0;
+    }
   }, [selected, onCategoryChange]);
+  
+  // Organizar categorías: para mobile, "Ver todos" primero, luego la seleccionada, luego el resto
+  const activeCategories = categories.filter(cat => cat.active === "true");
+  
+  // Para desktop: orden original
+  const orderedCategoriesDesktop = activeCategories;
+  
+  // Para mobile: orden personalizado
+  const todos = activeCategories.find(cat => cat.id === 0);
+  const selectedCategory = activeCategories.find(cat => cat.id === selected && cat.id !== 0);
+  const otherCategories = activeCategories.filter(cat => cat.id !== 0 && cat.id !== selected);
+  
+  const orderedCategoriesMobile = [
+    todos,
+    selectedCategory,
+    ...otherCategories
+  ].filter(Boolean); // Filtrar elementos undefined
   
   return (
     <div className="w-full bg-white border-b border-gray-200 sticky top-[92px] z-40">
       <div className="max-w-[1240px] mx-auto px-4">
-        <nav className="flex md:flex-wrap gap-2 py-4  overflow-x-auto md:overflow-x-visible scrollbar-hide">
+        <nav ref={navRef} className="flex md:flex-wrap gap-2 py-4  overflow-x-auto md:overflow-x-visible scrollbar-hide">
           <div className="flex gap-2 md:flex-wrap min-w-max md:min-w-0 ">
-            {categories.filter(cat => cat.active === "true").map((cat) => (
-              <Chip
-                key={cat.id}
-                label={cat.nombre}
-                selected={selected === cat.id}
-                onClick={() => setSelected(cat.id)}
-              />
-            ))}
+            {/* Desktop: orden original */}
+            <div className="hidden md:flex gap-2 flex-wrap">
+              {orderedCategoriesDesktop.map((cat) => (
+                <Chip
+                  key={cat.id}
+                  label={cat.nombre}
+                  selected={selected === cat.id}
+                  onClick={() => setSelected(cat.id)}
+                />
+              ))}
+            </div>
+            
+            {/* Mobile: orden personalizado */}
+            <div className="flex md:hidden gap-2">
+              {orderedCategoriesMobile.map((cat) => (
+                <Chip
+                  key={cat.id}
+                  label={cat.nombre}
+                  selected={selected === cat.id}
+                  onClick={() => setSelected(cat.id)}
+                />
+              ))}
+            </div>
           </div>
         </nav>
       </div>

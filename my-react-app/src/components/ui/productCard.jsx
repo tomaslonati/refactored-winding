@@ -1,21 +1,27 @@
 import { Link } from 'react-router-dom';
 import { ASSETS, getAssetUrl } from "../../utils/assets";
+import { useState } from 'react';
 
 const ProductCard = ({ name, imagenes = [], slug, desc }) => {
+    const [imgLoaded, setImgLoaded] = useState(false);
     // Usar la primera imagen del array o una imagen por defecto
     const imageSrc = imagenes.length > 0 ? getAssetUrl(imagenes[0]) : ASSETS.home.electricidadIcon;
 
     return (
         <Link 
             to={`/productos/${slug}`}
-            className="cursor-pointer rounded-xl flex flex-col justify-between  bg-white shadow-[0px_4px_16px_rgba(2,110,192,0.18)] transition-all duration-300 ease-in-out hover:shadow-[0px_8px_24px_rgba(2,110,192,0.25)] hover:-translate-y-1 group"
+            className="cursor-pointer rounded-xl flex flex-col justify-between mt-10 bg-white shadow-[0px_4px_16px_rgba(2,110,192,0.18)] transition-all duration-300 ease-in-out hover:shadow-[0px_8px_24px_rgba(2,110,192,0.25)] hover:-translate-y-1 group"
         >
             <div className="flex flex-col w-full h-full">                
-                <div className="flex items-center justify-center w-full  mb-4">
+                <div className="w-full h-[200px] mb-3 relative">
+                    {!imgLoaded && (
+                        <div className="absolute inset-0 w-full h-full bg-gray-200 rounded-t-xl animate-pulse z-0" />
+                    )}
                     <img
-                        className=" w-full object-contain"
+                        className={`w-full h-full object-cover rounded-t-xl transition-opacity duration-300 z-10 ${imgLoaded ? 'opacity-100' : 'opacity-0'}`}
                         src={imageSrc}
                         alt={name}
+                        onLoad={() => setImgLoaded(true)}
                     />
                 </div>
                 <div className='p-3 pb-8 lg:px-[24px] flex flex-col justify-between w-full h-full'>   

@@ -15,7 +15,7 @@ const ProductCategory = () => {
     const activeCategories = categories.filter(cat => cat.active === "true" && cat.id !== 0);
 
     return (        
-    <section className="mt-10 lg:mt-20 flex flex-col items-center justify-center w-full bg-[#FDFEFF] gap-0 lg:gap-8 px-8 lg:px-0">
+    <section className="mt-10 lg:mt-20 flex flex-col items-center justify-center w-full bg-[#E6F4F8] gap-0 lg:gap-8 px-8 lg:px-0">
            <SectionHeader 
                 title="Nuestros productos"
                 description="Soluciones de calidad para industria, hogares y comercios."

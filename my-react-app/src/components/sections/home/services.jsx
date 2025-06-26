@@ -4,7 +4,7 @@ import { ASSETS } from "../../../utils/assets";
 
 const Services = () => {
     return (        
-    <section id="servicios" className="mt-10 lg:mt-20 flex flex-col items-center justify-center w-full bg-[#FDFEFF] gap-0 lg:gap-8 px-8 lg:px-0">
+    <section id="servicios" className="mt-10 lg:mt-20 flex flex-col items-center justify-center w-full  gap-0 lg:gap-8 px-8 lg:px-0">
         <SectionHeader 
             title="Servicios"
             description="Acompañamiento personalizado"
@@ -25,7 +25,8 @@ const Services = () => {
         </div>
         <Button 
             variant="primary"
-            to="/contacto"
+            href="https://wa.me/5492993277282?text=Hola!%20Quiero%20más%20información%20sobre%20sus%20servicios"
+            external={true}
             className="mt-8 lg:mt-2"
         >
             Contactanos

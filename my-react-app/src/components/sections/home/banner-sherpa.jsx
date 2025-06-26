@@ -2,7 +2,7 @@ import Button from "../../common/button";
 import { ASSETS } from "../../../utils/assets";
 
 const BannerSherpa = () => {    const handleNavigate = () => {
-        window.location.href = '/react-demo/my-react-app/productos/sherpa-energia-modular-donde-estes';
+        window.location.href = '/productos/sherpa-energia-modular-donde-estes';
     };
 
     return (

@@ -13,8 +13,6 @@
             ],
             "documentos": [
                 {
-                    "Catálogo PDF": "https://example.com/catalogo-tis.pdf",
-                    "Ficha Técnica": "https://example.com/ficha-tecnica-tis.pdf"
                 }
             ],
             "descripcion_corta": "Sistema de iluminación móvil equipado con paneles solares, baterías de alto rendimiento y un sistema de control eficiente. Es ideal para proporcionar luz en entornos como minería, petroleras, construcción y otros escenarios industriales, sin depender de la red eléctrica.",
@@ -134,8 +132,8 @@
             ],
             "documentos": [
                 {
-                    "Catálogo": "/assets/products/solar_box_catalogo.pdf",
-                    "Ficha Técnica": "/assets/products/solar_box_ficha_tecnica.pdf"
+                    "Folleto": "/assets/products/Folleto Solar Box.pdf",
+                    "Manual de usuario": "/assets/products/Manual de usuario solar box.pdf"
                 }
             ],
             "descripcion_corta": "Equipo portátil ideal para industria, eventos y turismo. Proporciona energía confiable y sostenible en cualquier lugar.",

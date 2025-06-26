@@ -1,0 +1,14 @@
+name: Auto Deploy to Ferozo
+
+on:
+  push:
+    branches: [deploy]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Ferozo Deploy
+        run: |
+          curl -X POST https://ferozo.host/deploy/git/ba0789c37bcd1ee2b0b0885070a38c6c
