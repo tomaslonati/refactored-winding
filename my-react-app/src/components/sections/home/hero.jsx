@@ -10,9 +10,10 @@ const Hero = () => {
                 <h1 className="text-[#FFFFF]  text-5xl lg:text-[74px] font-semibold pt-4 lg:pt-0">
                     Soluciones con energía limpia
                 </h1>
-                <p className="text-[#FFFFF] text-base  lg:text-lg lg:px-20 font-normal">
-                    Ofrecemos alquiler, venta y servicios para hogares, comercios e industrias.
-                </p>                <div className="flex md:flex-row flex-col gap-4 w-full max-w-md mx-auto md:max-w-none md:w-auto md:justify-center">
+                <p className="text-[#FFFFF] text-[22px]  lg:text-lg lg:px-20 font-normal">
+                    Alquiler, venta y servicios para hogares, comercios e industrias.
+                </p>                
+                <div className="flex md:flex-row flex-col gap-4 w-full max-w-md mx-auto md:max-w-none md:w-auto md:justify-center">
                     <Button 
                         variant="primary"
                         size="medium"
