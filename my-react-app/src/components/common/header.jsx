@@ -120,6 +120,14 @@ const Header = () => {
                             className="flex py-2  items-center gap-1 text-gray-700 hover:text-gray-500 focus:outline-none"
                             aria-haspopup="true"
                             aria-expanded={productsDropdownOpen}
+                            onClick={() => {
+                                if (productsDropdownOpen) {
+                                    navigate('/productos');
+                                    setProductsDropdownOpen(false);
+                                } else {
+                                    setProductsDropdownOpen(true);
+                                }
+                            }}
                         >
                             Productos
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -128,6 +136,7 @@ const Header = () => {
                         </button>                            
                         <div className={`${productsDropdownOpen ? 'block' : 'hidden'} absolute left-0 mt-0 w-64 text-black text-left bg-white border rounded shadow-lg z-10`}
                         >
+                            <Link to="/productos" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-100 font-semibold">Todos los productos</Link>
                             {activeCategories.map(cat => (
                                 <Link
                                     key={cat.id}
@@ -137,7 +146,6 @@ const Header = () => {
                                     {cat.nombre}
                                 </Link>
                             ))}
-                            <Link to="/productos" className="block px-4 py-2 text-sm  border-t-1   border-gray-300 text-gray-600 hover:bg-blue-100">Todos los productos</Link>
                         </div>
                     </div>                    
                     <button 
@@ -203,7 +211,15 @@ const Header = () => {
                         <div className="flex flex-col items-start ">
                             <button
                                 className="flex items-center w-full justify-start text-gray-700 py-3 gap-2 text-[22px] font-medium"
-                                onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
+                                onClick={() => {
+                                    if (productsDropdownOpen) {
+                                        navigate('/productos');
+                                        setMenuOpen(false);
+                                        setProductsDropdownOpen(false);
+                                    } else {
+                                        setProductsDropdownOpen(true);
+                                    }
+                                }}
                             >
                                 Productos
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -212,6 +228,7 @@ const Header = () => {
                             </button>                            
                             {productsDropdownOpen && (
                                 <div className=" border-1 ml-2 border-gray-300 pt-2 rounded">
+                                    <Link to="/productos" className="px-4 block py-3 text-gray-600 w-full border-b-1 border-gray-300 text-[20px] font-medium" onClick={() => setMenuOpen(false)}>Ver todos</Link>
                                     {activeCategories.map(cat => (
                                         <Link
                                             key={cat.id}
@@ -222,7 +239,6 @@ const Header = () => {
                                             {cat.nombre}
                                         </Link>
                                     ))}
-                                    <Link to="/productos" className="px-4 block py-3 text-gray-600 w-full border-t-1 border-gray-300 text-[20px] font-medium" onClick={() => setMenuOpen(false)}>Ver todos</Link>
                                 </div>
                             )}
                         </div>                        
